@@ -1,4 +1,4 @@
-package Habitaciones;
+package habitaciones;
 import extras.*;
 
 public class Hab9 {
@@ -41,7 +41,7 @@ public class Hab9 {
         Temp.Temporizador(2500);
         System.out.println("Su presencia induce un escalofrío en el más valiente. La piel, rugosa y pálida, parece absorber la luz, dejando solo sus ojos brillantes y malévolos visibles. Colmillos afilados asoman de su boca entreabierta, y sus garras arañan el aire con cada movimiento");
         Temp.Temporizador(3500);
-        System.out.println("¡VA DIRECTO HACIA TÍ!");
+        System.out.println("¡VA DIRECTO HACIA T�?!");
         Temp.Temporizador(2500); // tiene que luchar
         
     }

@@ -1,4 +1,4 @@
-package Habitaciones;
+package habitaciones;
 import extras.*;
 
 public class Hab3 {
