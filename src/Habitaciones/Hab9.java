@@ -1,5 +1,5 @@
-package habitaciones;
-import juego.*;
+package Habitaciones;
+import extras.*;
 
 public class Hab9 {
 
@@ -30,7 +30,7 @@ public class Hab9 {
                             "2. Ejecutar funciones matemáticas \r\n" +
                             "3. Imprimir resultados en pantalla \r\n" +
                             "4. Reparar errores en el código"); // LA VERDADERA ES LA 1
-        Temp.Temporizador(2500); // esto será cuando le de a buscar pistas  // SI ACIERTA LA PREGUNTA, FINALIZA EL JUEGO.
+        Temp.Temporizador(2500); // esto será cuando le de a buscar pistas  // SI ACIERTA LA PREGUNTA, FINALIZA EL extras.
         System.out.println("Oh oh... Desearás haber acertado...");
         Temp.Temporizador(2500); // esto es lo que aparece cuando fallan la pregunta, aparece el monstruo
         System.out.println("Empiezas a escuchar un ruido un tanto alejado a tus espaldas...");

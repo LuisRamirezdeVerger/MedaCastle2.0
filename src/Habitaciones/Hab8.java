@@ -1,5 +1,5 @@
-package habitaciones;
-import juego.*;
+package Habitaciones;
+import extras.*;
 
 public class Hab8 {
 

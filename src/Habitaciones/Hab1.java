@@ -1,6 +1,6 @@
-package habitaciones;
+package Habitaciones;
 import java.util.*;
-import juego.*;
+import extras.*;
 
 
 public class Hab1 {
