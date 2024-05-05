@@ -1,4 +1,4 @@
-package Habitaciones;
+package habitaciones;
 import java.util.*;
 import extras.*;
 
