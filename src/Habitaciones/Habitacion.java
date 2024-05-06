@@ -11,13 +11,12 @@ public class Habitacion {
     //Por implementar
     private ArrayList<Objeto> objetos;
     //private Enemigo enemigo;
-     // Constructor (a;adir , Objeto[] objetos, Enemigo enemigo)
+     // Constructor ( Añadir Enemigo enemigo)
     public Habitacion(String descripcion, String[] dialogo, String[] pistas, ArrayList<Objeto> objetos) {
         this.descripcion = descripcion;
         this.dialogo = dialogo;
         this.pistas = pistas;
         this.objetos = objetos;
-   //     this.objetos = objetos;
    //     this.enemigo = enemigo;
     }
 
