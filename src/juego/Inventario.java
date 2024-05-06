@@ -24,13 +24,13 @@ public class Inventario {
         objetos.remove(objeto);
     }
     public void mostrarInventario() {
-        System.out.println("Inventario: ");
-        if (!objetos.isEmpty()) {
-            for (Objeto objeto : objetos) {
-                System.out.println("- " + objeto.getNombre() + ": Durabilidad " + objeto.getDurabilidad());
-            }
-        } else {
-            System.out.println("El inventario está vacío. ");
+        System.out.println("Inventario de la habitación:");
+    if (objetos != null && !objetos.isEmpty()) {
+        for (Objeto objeto : objetos) {
+            System.out.println("- " + objeto.getNombre() + ": Durabilidad " + objeto.getDurabilidad());
         }
+    } else {
+        System.out.println("El inventario de la habitación está vacío.");
     }
+}
 }

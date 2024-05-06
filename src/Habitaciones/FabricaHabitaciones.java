@@ -25,7 +25,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        Habitacion habitacionIntro = new Habitacion(descripcion, dialogo, pistas);
+        Habitacion habitacionIntro = new Habitacion(descripcion, dialogo, pistas, null);
         habitacionIntro.mostrarPistas();
 
         return habitacionIntro;
@@ -50,6 +50,6 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas);
+        return new Habitacion(descripcion, dialogo, pistas, null);
     }
 }
