@@ -2,22 +2,26 @@ package juego;
 
 public class Objeto {
     private String nombre;
-    private boolean encontrado;
-    //Podemos introducir descripcion y durabilidad
+    private int durabilidad;
 
-    public Objeto (String nuevoNombre){
-        this.nombre = nuevoNombre;
+    public Objeto(String nombre, int durabilidad) {
+        this.nombre = nombre;
+        this.durabilidad = durabilidad;
     }
 
-    public String getNombre(){
-        return this.nombre;
+    public String getNombre() {
+        return nombre;
     }
 
-    public boolean getEncontrado(){
-        return this.encontrado;
+    public void setNombre(String newNombre) {
+        this.nombre = newNombre;
     }
 
-    public void setEncontrado(boolean nuevoEncontrado){
-        this.encontrado = nuevoEncontrado;
+    public int getDurabilidad() {
+        return durabilidad;
+    }
+
+    public void setDurabilidad(int newDurabilidad) {
+        this.durabilidad = newDurabilidad;
     }
 }

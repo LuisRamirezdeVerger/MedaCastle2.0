@@ -22,24 +22,24 @@ public class Habitacion {
         return descripcion;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setDescripcion(String newDescripcion) {
+        this.descripcion = newDescripcion;
     }
 
     public String[] getDialogo() {
         return dialogo;
     }
 
-    public void setDialogo(String[] dialogo) {
-        this.dialogo = dialogo;
+    public void setDialogo(String[] newDialogo) {
+        this.dialogo = newDialogo;
     }
 
     public String[] getPistas() {
         return pistas;
     }
 
-    public void setPistas(String[] pistas) {
-        this.pistas = pistas;
+    public void setPistas(String[] newPistas) {
+        this.pistas = newPistas;
     }
 
    // public Objeto[] getObjetos() {
@@ -57,4 +57,11 @@ public class Habitacion {
     //public void setEnemigo(Enemigo enemigo) {
    //     this.enemigo = enemigo;
     //}
+
+    public void mostrarPistas() {
+        System.out.println("Pistas:");
+        for (String pista : pistas) {
+            System.out.println(" " + pista);
+        }
+    }
 }

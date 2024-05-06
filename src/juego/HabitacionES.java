@@ -1,16 +1,16 @@
 package juego;
 import java.util.List;
 
-public class Habitacion {
+public class HabitacionES {
     private String nombre;
     private String descripcion;
     private Inventario inventario;
-    private static Habitacion habitacionNorte;
-    private static Habitacion habitacionSur;
-    private static Habitacion habitacionEste;
-    private static Habitacion habitacionOeste;
+    private static HabitacionES habitacionNorte;
+    private static HabitacionES habitacionSur;
+    private static HabitacionES habitacionEste;
+    private static HabitacionES habitacionOeste;
 
-    public Habitacion (String nombre, String descripcion, Inventario inventario){
+    public HabitacionES (String nombre, String descripcion, Inventario inventario){
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.inventario = inventario;
@@ -36,35 +36,35 @@ public class Habitacion {
         this.inventario = nuevoInventario;
     }
 
-    public void setHabitacionNorte(Habitacion nuevoHabitacionNorte){
-        Habitacion.habitacionNorte = nuevoHabitacionNorte;
+    public void setHabitacionNorte(HabitacionES nuevoHabitacionNorte){
+        HabitacionES.habitacionNorte = nuevoHabitacionNorte;
     }
 
-    public void setHabitacionSur(Habitacion nuevoHabitacionSur){
-        Habitacion.habitacionSur = nuevoHabitacionSur;
+    public void setHabitacionSur(HabitacionES nuevoHabitacionSur){
+        HabitacionES.habitacionSur = nuevoHabitacionSur;
     }
 
-    public void setHabitacionEste(Habitacion nuevoHabitacionEste){
-        Habitacion.habitacionEste = nuevoHabitacionEste;
+    public void setHabitacionEste(HabitacionES nuevoHabitacionEste){
+        HabitacionES.habitacionEste = nuevoHabitacionEste;
     }
 
-    public void setHabitacionOeste(Habitacion nuevoHabitacionOeste){
-        Habitacion.habitacionOeste = nuevoHabitacionOeste;
+    public void setHabitacionOeste(HabitacionES nuevoHabitacionOeste){
+        HabitacionES.habitacionOeste = nuevoHabitacionOeste;
     }
 
-    public static Habitacion getHabitacionNorte(){
+    public static HabitacionES getHabitacionNorte(){
         return habitacionNorte;
     }
 
-    public static Habitacion getHabitacionSur(){
+    public static HabitacionES getHabitacionSur(){
         return habitacionSur;
     }
 
-    public static Habitacion getHabitacionEste(){
+    public static HabitacionES getHabitacionEste(){
         return habitacionEste;
     }
 
-    public static Habitacion getHabitacionOeste(){
+    public static HabitacionES getHabitacionOeste(){
         return habitacionOeste;
     }
 
