@@ -156,4 +156,124 @@ public class FabricaHabitaciones {
 
         return new Habitacion(descripcion, dialogo, pistas, null);
     }
+
+    public static Habitacion creaHabitacionHab3(){
+        String descripcion = "¡Hab3!";
+        String[] dialogo = {" "};
+
+        for (String linea : dialogo) {
+            System.out.println(linea);
+            Temp.Temporizador(2000); 
+        }
+
+        String[] pistas = {"Pistas de la habitación 3"};
+        System.out.print("Presiona Enter para continuar...");
+        sc.nextLine();
+        Temp.LimpiarPantalla();
+
+        return new Habitacion(descripcion, dialogo, pistas, null);
+    }
+
+    public static Habitacion creaHabitacionHab4(){
+        String descripcion = "¡Hab4!";
+        String[] dialogo = {" "};
+
+        for (String linea : dialogo) {
+            System.out.println(linea);
+            Temp.Temporizador(2000); 
+        }
+
+        String[] pistas = {"Pistas de la habitación 4"};
+        System.out.print("Presiona Enter para continuar...");
+        sc.nextLine();
+        Temp.LimpiarPantalla();
+
+        return new Habitacion(descripcion, dialogo, pistas, null);
+    }
+
+    public static Habitacion creaHabitacionHab5(){
+        String descripcion = "¡Hab5!";
+        String[] dialogo = {" "};
+
+        for (String linea : dialogo) {
+            System.out.println(linea);
+            Temp.Temporizador(2000); 
+        }
+
+        String[] pistas = {"Pistas de la habitación 5"};
+        System.out.print("Presiona Enter para continuar...");
+        sc.nextLine();
+        Temp.LimpiarPantalla();
+
+        return new Habitacion(descripcion, dialogo, pistas, null);
+    }
+
+    public static Habitacion creaHabitacionHab6(){
+        String descripcion = "¡Hab6!";
+        String[] dialogo = {" "};
+
+        for (String linea : dialogo) {
+            System.out.println(linea);
+            Temp.Temporizador(2000); 
+        }
+
+        String[] pistas = {"Pistas de la habitación 6"};
+        System.out.print("Presiona Enter para continuar...");
+        sc.nextLine();
+        Temp.LimpiarPantalla();
+
+        return new Habitacion(descripcion, dialogo, pistas, null);
+    }
+
+    public static Habitacion creaHabitacionHab7(){
+        String descripcion = "¡Hab7!";
+        String[] dialogo = {" "};
+
+        for (String linea : dialogo) {
+            System.out.println(linea);
+            Temp.Temporizador(2000); 
+        }
+
+        String[] pistas = {"Pistas de la habitación 7"};
+        System.out.print("Presiona Enter para continuar...");
+        sc.nextLine();
+        Temp.LimpiarPantalla();
+
+        return new Habitacion(descripcion, dialogo, pistas, null);
+    }
+
+    public static Habitacion creaHabitacionHab8(){
+        String descripcion = "¡Hab8!";
+        String[] dialogo = {" "};
+
+        for (String linea : dialogo) {
+            System.out.println(linea);
+            Temp.Temporizador(2000); 
+        }
+
+        String[] pistas = {"Pistas de la habitación 8"};
+        System.out.print("Presiona Enter para continuar...");
+        sc.nextLine();
+        Temp.LimpiarPantalla();
+
+        return new Habitacion(descripcion, dialogo, pistas, null);
+    }
+
+    public static Habitacion creaHabitacionHab9(){
+        String descripcion = "¡Hab9!";
+        String[] dialogo = {" "};
+
+        for (String linea : dialogo) {
+            System.out.println(linea);
+            Temp.Temporizador(2000); 
+        }
+
+        String[] pistas = {"Pistas de la habitación 9"};
+        System.out.print("Presiona Enter para continuar...");
+        sc.nextLine();
+        Temp.LimpiarPantalla();
+
+        return new Habitacion(descripcion, dialogo, pistas, null);
+    }
+    
 }
