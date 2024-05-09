@@ -29,9 +29,9 @@ public class Hab0 {
         Temp.LimpiarPantalla();
         System.out.println("...");
         Temp.Temporizador(2500);
-        System.out.println("Al mirar atrás, ves como el puente se ha cerrado detrÃ¡s tuya... ");
+        System.out.println("Al mirar atrï¿½s, ves como el puente se ha cerrado detrÃ¡s tuya... ");
         Temp.Temporizador(3500);
-        System.out.println("Áh¡Eh!!- Escuchas un grito detrás del puente levado - Avisaremos a la persona al cargo y vendremos a por ti, intenta buscar alguna salida mientras y no te metas en lÃ­os!");
+        System.out.println("ï¿½hï¿½Eh!!- Escuchas un grito detrï¿½s del puente levado - Avisaremos a la persona al cargo y vendremos a por ti, intenta buscar alguna salida mientras y no te metas en lÃ­os!");
         Temp.Temporizador(2000);
         System.out.println("Presiona Enter para continuar.");
         sc.nextLine();
