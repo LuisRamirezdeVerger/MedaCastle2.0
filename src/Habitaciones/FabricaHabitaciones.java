@@ -25,7 +25,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        Habitacion habitacionIntro = new Habitacion(descripcion, dialogo, pistas, null);
+        Habitacion habitacionIntro = new Habitacion(descripcion, dialogo, pistas, null, null);
         habitacionIntro.mostrarPistas();
 
         return habitacionIntro;
@@ -57,7 +57,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabTuto(){
@@ -87,7 +87,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabitacionHab0(){
@@ -117,7 +117,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabitacionHab1(){
@@ -138,7 +138,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
     public static Habitacion creaHabitacionHab2(){
         String descripcion = "¡Hab2!";
@@ -154,7 +154,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabitacionHab3(){
@@ -171,7 +171,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabitacionHab4(){
@@ -188,7 +188,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabitacionHab5(){
@@ -205,7 +205,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabitacionHab6(){
@@ -222,7 +222,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabitacionHab7(){
@@ -239,7 +239,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabitacionHab8(){
@@ -256,7 +256,7 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabitacionHab9(){
@@ -273,7 +273,9 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
+
+    
     
 }

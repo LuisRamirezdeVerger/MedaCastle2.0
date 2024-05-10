@@ -2,17 +2,17 @@ package habitaciones;
 import java.util.ArrayList;
 
 import juego.*;
+import personajes.*;
 
 public class Habitacion {
 
     private String descripcion;
     private String[] dialogo;
     private String[] pistas;
-    //Por implementar
     private ArrayList<Objeto> objetos;
-    //private Enemigo enemigo;
-     // Constructor ( Añadir Enemigo enemigo)
-    public Habitacion(String descripcion, String[] dialogo, String[] pistas, ArrayList<Objeto> objetos) {
+    private Enemigo enemigo;
+    // Constructor
+    public Habitacion(String descripcion, String[] dialogo, String[] pistas, ArrayList<Objeto> objetos, Enemigo enemigo) {
         this.descripcion = descripcion;
         this.dialogo = dialogo;
         this.pistas = pistas;
@@ -53,13 +53,13 @@ public class Habitacion {
         this.objetos = objetos;
     }
 
-   // public Enemigo getEnemigo() {
-    //    return enemigo;
-    //}
+    public Enemigo getEnemigo() {
+        return enemigo;
+    }
 
-    //public void setEnemigo(Enemigo enemigo) {
-   //     this.enemigo = enemigo;
-    //}
+    public void setEnemigo(Enemigo enemigo) {
+        this.enemigo = enemigo;
+    }
 
     public void mostrarPistas() {
         System.out.println("Pistas:");
