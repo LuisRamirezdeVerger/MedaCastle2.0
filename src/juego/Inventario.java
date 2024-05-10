@@ -2,7 +2,7 @@ package juego;
 import java.util.*;
 
 public class Inventario {
-    private ArrayList<Objeto> objetos;
+    private static ArrayList<Objeto> objetos;
 
     public Inventario(){
         this.objetos = new ArrayList<>();
@@ -20,7 +20,7 @@ public class Inventario {
         objetos.add(objeto);
     }
 
-    public void eliminarObjeto(Objeto objeto) {
+    public static void eliminarObjeto(Objeto objeto) {
         objetos.remove(objeto);
     }
     public void mostrarInventario() {

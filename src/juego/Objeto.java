@@ -47,4 +47,15 @@ public class Objeto {
     public void setHealValor(Integer newHealValor) {
         this.healValor = newHealValor;
     }
+
+    // Método para usar el objeto
+    //hay que probarlo
+    public void usarObjeto() {
+        if (this.durabilidad > 0) {
+            this.durabilidad--;
+        } if (this.durabilidad == 0) {
+            System.out.println("El objeto " + this.nombre + " se ha roto.");
+            Inventario.eliminarObjeto(this);
+        }
+    }
 }
