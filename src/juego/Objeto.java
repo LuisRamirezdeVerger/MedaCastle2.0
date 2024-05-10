@@ -3,10 +3,17 @@ package juego;
 public class Objeto {
     private String nombre;
     private int durabilidad;
+    private Integer dmgValor; // Integer para poder ser null
+    private Integer healValor;
 
-    public Objeto(String nombre, int durabilidad) {
+
+    //Libro como objeto que den estadisticas
+
+    public Objeto(String nombre, int durabilidad, Integer dmgValor, Integer healValor) {
         this.nombre = nombre;
         this.durabilidad = durabilidad;
+        this.dmgValor = dmgValor;
+        this.healValor = healValor;
     }
 
     public String getNombre() {
@@ -23,5 +30,21 @@ public class Objeto {
 
     public void setDurabilidad(int newDurabilidad) {
         this.durabilidad = newDurabilidad;
+    }
+
+    public Integer getDmgValor() {
+        return dmgValor;
+    }
+
+    public void setDmgValor(Integer newDmgValor) {
+        this.dmgValor = newDmgValor;
+    }
+
+    public Integer getHealValor() {
+        return healValor;
+    }
+
+    public void setHealValor(Integer newHealValor) {
+        this.healValor = newHealValor;
     }
 }

@@ -1,6 +1,8 @@
 package habitaciones;
 
 import extras.Temp;
+import personajes.Enemigo;
+
 import java.util.*;
 
 public class FabricaHabitaciones {
@@ -87,7 +89,9 @@ public class FabricaHabitaciones {
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        Enemigo enemigoTuto = new Enemigo("Lord Medac", 100, 10, 5);
+
+        return new Habitacion(descripcion, dialogo, pistas, null, enemigoTuto);
     }
 
     public static Habitacion creaHabitacionHab0(){
