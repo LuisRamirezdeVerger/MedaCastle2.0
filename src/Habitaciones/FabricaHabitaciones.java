@@ -1,7 +1,8 @@
 package habitaciones;
 
-import extras.Temp;
-import personajes.Enemigo;
+import extras.*;
+import juego.*;
+import personajes.*;
 
 import java.util.*;
 
@@ -30,6 +31,7 @@ public class FabricaHabitaciones {
         Habitacion habitacionIntro = new Habitacion(descripcion, dialogo, pistas, null, null);
         habitacionIntro.mostrarPistas();
 
+        //Arreglar
         return habitacionIntro;
     }
 
@@ -88,10 +90,12 @@ public class FabricaHabitaciones {
         System.out.print("Presiona Enter para continuar...");
         sc.nextLine();
         Temp.LimpiarPantalla();
-
+        //Ejemplo de enemigo
         Enemigo enemigoTuto = new Enemigo("Lord Medac", 100, 10, 5);
+        //Puede dar fallos, pero es un ejemplo
+        Objeto llave = new Objeto("Llave", 1, null, null);
 
-        return new Habitacion(descripcion, dialogo, pistas, null, enemigoTuto);
+        return new Habitacion(descripcion, dialogo, pistas, llave, enemigoTuto);
     }
 
     public static Habitacion creaHabitacionHab0(){
