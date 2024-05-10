@@ -9,15 +9,15 @@ public class Habitacion {
     private String descripcion;
     private String[] dialogo;
     private String[] pistas;
-    private ArrayList<Objeto> objetos;
+    private Objeto objetos;
     private Enemigo enemigo;
     // Constructor
-    public Habitacion(String descripcion, String[] dialogo, String[] pistas, ArrayList<Objeto> objetos, Enemigo enemigo) {
+    public Habitacion(String descripcion, String[] dialogo, String[] pistas, Objeto objetos, Enemigo enemigo) {
         this.descripcion = descripcion;
         this.dialogo = dialogo;
         this.pistas = pistas;
         this.objetos = objetos;
-   //     this.enemigo = enemigo;
+        this.enemigo = enemigo;
     }
 
     // Getters y setters
@@ -45,12 +45,12 @@ public class Habitacion {
         this.pistas = newPistas;
     }
 
-    public ArrayList<Objeto> getObjetos() {
+    public Objeto getObjetos() {
         return objetos;
    }
 
-    public void setObjetos(ArrayList<Objeto> objetos) {
-        this.objetos = objetos;
+    public void setObjetos(Objeto newObjetos) {
+        this.objetos = newObjetos;
     }
 
     public Enemigo getEnemigo() {

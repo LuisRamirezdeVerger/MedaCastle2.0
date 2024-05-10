@@ -20,7 +20,7 @@ public class FabricaHabitaciones {
 
         for (String linea : dialogo) {
             System.out.println(linea);
-            Temp.Temporizador(2000); // Pausa de 2 segundos entre cada línea
+            Temp.Temporizador(3000); // Pausa de 3 segundos entre cada línea
         }
 
         String[] pistas = {"Puedes ver una llave tirada en el suelo. "};
