@@ -1,36 +1,35 @@
 package juego;
-import java.util.*;
+
+import java.util.ArrayList;
 
 public class Inventario {
-    private static ArrayList<Objeto> objetos;
+    private ArrayList<Objeto> objetos;
 
-    public Inventario(){
+    public Inventario() {
         this.objetos = new ArrayList<>();
     }
 
-    public ArrayList<Objeto> getObjetos(){
-        return this.objetos;
+    public ArrayList<Objeto> getObjetos() {
+        return new ArrayList<>(objetos);
     }
 
-    public void setObjetos (ArrayList<Objeto> newObjetos){
-        this.objetos = newObjetos;
-    }
-    
     public void agregarObjeto(Objeto objeto) {
         objetos.add(objeto);
     }
 
-    public static void eliminarObjeto(Objeto objeto) {
+    public void eliminarObjeto(Objeto objeto) {
         objetos.remove(objeto);
     }
+
     public void mostrarInventario() {
         System.out.println("Inventario de la habitación:");
-    if (objetos != null && !objetos.isEmpty()) {
-        for (Objeto objeto : objetos) {
-            System.out.println("- " + objeto.getNombre() + ": Durabilidad " + objeto.getDurabilidad());
+        if (!objetos.isEmpty()) {
+            for (Objeto objeto : objetos) {
+                System.out.println("- " + objeto.getNombre() + ": Durabilidad " + objeto.getDurabilidad());
+            }
+        } else {
+            System.out.println("El inventario de la habitación está vacío.");
         }
-    } else {
-        System.out.println("El inventario de la habitación está vacío.");
     }
-}
+
 }

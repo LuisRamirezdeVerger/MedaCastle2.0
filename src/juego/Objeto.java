@@ -5,6 +5,7 @@ public class Objeto {
     private int durabilidad;
     private Integer dmgValor; // Integer para poder ser null
     private Integer healValor;
+    private Inventario inventario;
 
 
     //Libro como objeto que den estadisticas
@@ -48,14 +49,29 @@ public class Objeto {
         this.healValor = newHealValor;
     }
 
+    public Inventario getInventario() {
+        return inventario;
+    }
+
+    public void setInventario(Inventario newInventario) {
+        this.inventario = newInventario;
+    }
+
     // Método para usar el objeto
     //hay que probarlo
-    public void usarObjeto() {
+    public void reducirDurabilidad() {
         if (this.durabilidad > 0) {
             this.durabilidad--;
-        } if (this.durabilidad == 0) {
-            System.out.println("El objeto " + this.nombre + " se ha roto.");
-            Inventario.eliminarObjeto(this);
+        } else {
+            Inventario inventario = this.getInventario();
+            System.out.println("El objeto " + this.nombre + " se ha roto, no podrás usarlo más.");
+            inventario.eliminarObjeto(this);
         }
+        //if (this.durabilidad == 0) {
+        //    System.out.println("El objeto " + this.nombre + " se ha roto.");
+        //    Inventario.eliminarObjeto();
+        //}
     }
+
+    
 }
