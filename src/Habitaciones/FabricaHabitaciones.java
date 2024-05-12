@@ -71,16 +71,20 @@ public class FabricaHabitaciones {
             "Seguís las indicaciones de la persona al cargo, y, tras 9 minutos, llegáis al castillo.",
             "Es un castillo de lo más normal, con su puente levadizo, torretas para catapultas y varios puntos estrátegicos necesarios en la época.",
             "Está un poco en ruinas, tiene varias brechas en los muros, el río está seco y... Ahora que lo miras detenidamente, tu corazón empieza a acelerarse.",
-            "Sientes una extraña sensación y te planteas dar media vuelta...",
-            "Presiona Enter para continuar...",
-            "¿Uh? Estás bien, colega? -Te preguntan.",
-            "Elige tu respuesta: ",
-            "",
-            //Este menú debe ser un if/else para que el jugador pueda elegir si quiere seguir o no
-            "\nMenú: ",
-            "1.- Sí.",
-            "2.- No."};
+            "Sientes una extraña sensación y te planteas dar media vuelta...", 
+            "¿Uh? Estás bien, colega? -Te preguntan."
+        };
 
+        
+
+        for (String linea : dialogo) {
+            System.out.println(linea);
+            Temp.Temporizador(2000); 
+        }
+
+        System.out.print("Elige tu respuesta: ");
+        Temp.Temporizador(2000);
+        System.out.println("\nMenú: \n1.- Sí.\n2.- No.");
         int eleccion = sc.nextInt();
         switch (eleccion) {
             case 1:
@@ -94,11 +98,6 @@ public class FabricaHabitaciones {
             default:
                 System.out.println("¿Cómo? No entendí bien");
                 break;
-        }
-
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
         }
 
         String[] pistas = {"Pistas de la habitación final"};
