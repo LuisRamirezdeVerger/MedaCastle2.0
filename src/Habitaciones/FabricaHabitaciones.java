@@ -13,7 +13,7 @@ public class FabricaHabitaciones {
         String descripcion = "¡Bienvenid@s al interciclo de 1º de Desarrollo de Aplicaciones Multiplataforma! ";
         String[] dialogo = {
         "Hemos preparado una pequeña demo de un juego. En este caso es...  ",
-        "Bueno, ahora lo veréis1... ¡Esperamos que os guste! :) ", 
+        "Bueno, ahora lo veréis... ¡Esperamos que os guste! :) ", 
         "Como podéis comprobar, el juego carece de gráficos. Por tanto, sugerimos que leáis detenidamente. La respuesta puede estar en el texto... ",
         "En serio...", "...", "Responde con cuidado... ", "¡Esperamos que lo disfrutéis! "
         };
@@ -49,11 +49,11 @@ public class FabricaHabitaciones {
             "Sabemos que acabáis de llegar, nos ha surgido un imprevisto. Os recompensaremos por las molestias.",
             "Estamos en terrenos de 'Lord Medac', Conde de estas tierras. Si miráis al norte al salir, veréis su castillo. ¡Es una gran atracción en el lugar!",
             "Bueno, he de seguir con la ruta de aviso, luego nos vemos. ¡Disfrutad de la exploración!",
-            "Presiona Enter para continuar..."};
+            };
 
         for (String linea : dialogo) {
             System.out.println(linea);
-            Temp.Temporizador(2000); 
+            Temp.Temporizador(3000); 
         }
 
         String[] pistas = {"Pistas del tutorial"};
@@ -80,6 +80,21 @@ public class FabricaHabitaciones {
             "\nMenú: ",
             "1.- Sí.",
             "2.- No."};
+
+        int eleccion = sc.nextInt();
+        switch (eleccion) {
+            case 1:
+                System.out.println("Perfecto! Justo ahí tenemos el castillo. ENTREMOS!!");
+                sc.nextLine();
+                break;
+            case 2:
+                System.out.println("Tranqui. Esos son los nervios de entrar al castillo. ¡Me pasa lo mismo! No te preocupes, lleva años en desuso y es una atracción como nos dijeron.");
+                sc.nextLine();
+                break;
+            default:
+                System.out.println("¿Cómo? No entendí bien");
+                break;
+        }
 
         for (String linea : dialogo) {
             System.out.println(linea);
