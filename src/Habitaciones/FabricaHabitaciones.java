@@ -14,25 +14,23 @@ public class FabricaHabitaciones {
         String[] dialogo = {
         "Hemos preparado una pequeña demo de un juego. En este caso es...  ",
         "Bueno, ahora lo veréis... ¡Esperamos que os guste! :) ", 
-        "Como podéis comprobar, el juego carece de gráficos. Por tanto, sugerimos que leáis detenidamente. La respuesta puede estar en el texto... ",
+        "Como podéis comprobar, el juego carece de gráficos. Por tanto, sugerimos que leáis detenidamente.", 
+        "La respuesta puede estar en el texto... ",
         "En serio...", "...", "Responde con cuidado... ", "¡Esperamos que lo disfrutéis! "
         };
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(3000); // Pausa de 3 segundos entre cada línea
-        }
+        //for (String linea : dialogo) {
+        //    System.out.println(linea);
+        //    Temp.Temporizador(3000); // Pausa de 3 segundos entre cada línea
+        //}
 
-        String[] pistas = {"Puedes ver una llave tirada en el suelo. "};
+        String pistas = "Puedes ver una llave tirada en el suelo. ";
         System.out.print("Presiona Enter para continuar... ");
         sc.nextLine();
         Temp.LimpiarPantalla();
 
-        Habitacion habitacionIntro = new Habitacion(descripcion, dialogo, pistas, null, null);
-        habitacionIntro.mostrarPistas();
-
         //Arreglar
-        return habitacionIntro;
+        return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabIntro(){
@@ -51,12 +49,8 @@ public class FabricaHabitaciones {
             "Bueno, he de seguir con la ruta de aviso, luego nos vemos. ¡Disfrutad de la exploración!",
             };
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(3000); 
-        }
 
-        String[] pistas = {"Pistas del tutorial"};
+        String pistas = "Pistas del tutorial";
         System.out.print("Presiona Enter para continuar...");
         sc.nextLine();
         Temp.LimpiarPantalla();
@@ -67,22 +61,19 @@ public class FabricaHabitaciones {
     public static Habitacion creaHabTuto(){
         String descripcion = "¡HabFinal!";
         String[] dialogo = {
-            "- ¡Bien! Tampoco tenemos nada mejor que hacer, vayamos al castillo!. ~ Exclama un compañero ~ A todos os parece una buena idea, y sin dudar, partís.",
+            "- ¡Bien! Tampoco tenemos nada mejor que hacer, vayamos al castillo!.", 
+            "~ Exclama un compañero ~ A todos os parece una buena idea, y sin dudar, partís.",
             "Seguís las indicaciones de la persona al cargo, y, tras 9 minutos, llegáis al castillo.",
-            "Es un castillo de lo más normal, con su puente levadizo, torretas para catapultas y varios puntos estrátegicos necesarios en la época.",
-            "Está un poco en ruinas, tiene varias brechas en los muros, el río está seco y... Ahora que lo miras detenidamente, tu corazón empieza a acelerarse.",
+            "Es un castillo de lo más normal, con su puente levadizo",
+            " torretas para catapultas y varios puntos estrátegicos necesarios en la época.",
+            "Está un poco en ruinas, tiene varias brechas en los muros, el río está seco y...",
+            "Ahora que lo miras detenidamente, tu corazón empieza a acelerarse.",
             "Sientes una extraña sensación y te planteas dar media vuelta...", 
             "¿Uh? Estás bien, colega? -Te preguntan."
         };
 
-        
-
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
-        }
-
-        System.out.print("Elige tu respuesta: ");
+        /* 
+        System.out.print("Elige tu respuesta: " );
         Temp.Temporizador(2000);
         System.out.println("\nMenú: \n1.- Sí.\n2.- No.");
         int eleccion = sc.nextInt();
@@ -98,11 +89,11 @@ public class FabricaHabitaciones {
             default:
                 System.out.println("¿Cómo? No entendí bien");
                 break;
-        }
+       asdf }
+*/
+        String pistas = "Pistas de la habitación final";
 
-        String[] pistas = {"Pistas de la habitación final"};
-        System.out.print("Presiona Enter para continuar...");
-        sc.nextLine();
+        //Quizás sea necesario implementar  "LimpiarPantalla()" en
         Temp.LimpiarPantalla();
         //Ejemplo de enemigo
         Enemigo enemigoTuto = new Enemigo("Lord Medac", 100, 10, 5);
@@ -115,30 +106,21 @@ public class FabricaHabitaciones {
     public static Habitacion creaHabitacionHab0(){
         String descripcion = "¡Hab0!";
         String[] dialogo = {
+
             "Con mucha confianza, y sin pensarlo dos veces, te sacudes los miedos y cruzas corriendo el puente levadizo.",
-            "Acabas de entrar en el castillo...",
-            "¿QUÉ? ¡CUIDADO! ¡Espera! ~*Suena un mecanismo*~",
+            "*Acabas de entrar en el castillo...*",
             "Al escuchar la voz de tu compi, te das media vuelta para saber que está pasando...",
             "¡¡Oh, f*ck!! ",
             "Presiona Enter para continuar...",
-            ".",
-            "..",
-            "...",
-            "Al mirar atrás, ves como el puente se ha cerrado detrás tuya... ",
-            "�h�Eh!!- Escuchas un grito detrás del puente levado",
-            "- Avisaremos a la persona al cargo y vendremos a por ti, intenta buscar alguna salida mientras y no te metas en líos!",
-            "Presiona Enter para continuar."};
+            "Al mirar atrás, ves como el puente se ha cerrado detrás tuya...",
+            "Eh! Eh!!- Escuchas un grito detrás del puente levado - ", 
+            "Avisaremos a la persona al cargo y vendremos a por ti,",
+            "intenta buscar alguna salida mientras y no te metas en líos!",
+            "Presiona Enter para continuar."
+        };
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000);
-        }
-
-        String[] pistas = {"Pistas de la habitación 0"};
-        System.out.print("Presiona Enter para continuar...");
-        sc.nextLine();
-        Temp.LimpiarPantalla();
-
+        String pistas = "Pistas de la habitación 0";
+ 
         return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
@@ -148,14 +130,11 @@ public class FabricaHabitaciones {
             "Te quedas en shock con la cara un tanto descompuesta...",
             "Después de unos minutos mirando a la puerta como alguien de poco IQ, decides que será divertido explorar un castillo abandonado. ",
             "Pronto llegarán. -Piensas-",
-            "¿Qué quieres hacer?"};
+            "¿Qué quieres hacer?"
+        };
             //Aquí agregar un menú para que el jugador pueda elegir si quiere seguir o no
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
-        }
 
-        String[] pistas = {"Pistas de la habitación 1"};
+        String pistas = "Pistas de la habitación 1";
         System.out.print("Presiona Enter para continuar...");
         sc.nextLine();
         Temp.LimpiarPantalla();
@@ -164,34 +143,54 @@ public class FabricaHabitaciones {
     }
     public static Habitacion creaHabitacionHab2(){
         String descripcion = "¡Hab2!";
-        String[] dialogo = {" "};
+        String[] dialogo = {
+        
+        "Entras en el pasillo y te paras. Parece un pasillo normal, pero sabes que no lo será.",
+        "Das un paso dudoso y piensas que tienes que tener más decisión si quieres llegar a la siguiente habitación.",
+        "Respiras hondo y comienzas a caminar. Entornas los ojos y de repente suena un ruido de engranajes.",
+        "¡Mierda! Las paredes del pasillo comienzan a cerrarse lentamente y cada sonido del engranaje se clava en tus entrañas.",
+        "Está bien -piensas-, es el momento de pensar rápido si no quiero morir en versión 2D.",
+        "Sólo tienes dos opciones y tienes que salir rápido de este pasillo. Las paredes se siguen cerrando y casi puedes tocarlas con ambas manos a la vez. ",
+        "Sigue hacia delante o gira a la derecha. ¡DECIDE! ¡¡VAMOS!! ",
+      
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
-        }
+        };
+        //"Elige una opción: \n",
+        //"1.- Hacia adelante ",
+        //"2.- Hacia la izquierda"
 
-        String[] pistas = {"Pistas de la habitación 2"};
-        System.out.print("Presiona Enter para continuar...");
-        sc.nextLine();
-        Temp.LimpiarPantalla();
+        String pistas = "Pistas de la habitación 2";
+        //System.out.print("Presiona Enter para continuar...");
+        //sc.nextLine();
+        //Temp.LimpiarPantalla();
 
         return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
 
     public static Habitacion creaHabitacionHab3(){
         String descripcion = "¡Hab3!";
-        String[] dialogo = {" "};
+        String[] dialogo = {
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
-        }
+        "¡Has descubierto la sala secreta!",
+        "*Crac*",
+        "Oh oh, creo que no estás sol@...",
+        "Aparece una sombra",
+        "Desde la sombra empiezas a distinguir algo",
+        "Sea lo que sea, está claro que no es humano",
+        "Y los más de 2 metros de altura no ayudan a mantener la calma",
+        "Te das la vuelta y te diriges rápidamente hacia la puerta",
+        "Vaya parece que está bloqueada, no tienes escapatoria",
+        "En este momento, eres tú o ese ser de procedencia desconocida",
+        "", // el jugador debe interactuar para derrotar al monstruo
+        "No ha sido fácil... ¡pero lo lograste!",
+        "Es momento de descubrir si la puerta sigue bloqueada o no..." // el jugador se dirige a la puerta y al haber derrotado al monstruo la puerta se ha desbloqueado y ya puede salir y avanzar
+        };
 
-        String[] pistas = {"Pistas de la habitación 3"};
-        System.out.print("Presiona Enter para continuar...");
-        sc.nextLine();
-        Temp.LimpiarPantalla();
+
+        String pistas = "Pistas de la habitación 3";
+        //System.out.print("Presiona Enter para continuar...");
+        //sc.nextLine();
+        //Temp.LimpiarPantalla();
 
         return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
@@ -200,12 +199,9 @@ public class FabricaHabitaciones {
         String descripcion = "¡Hab4!";
         String[] dialogo = {" "};
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
-        }
+    
 
-        String[] pistas = {"Pistas de la habitación 4"};
+        String pistas = "Pistas de la habitación 4";
         System.out.print("Presiona Enter para continuar...");
         sc.nextLine();
         Temp.LimpiarPantalla();
@@ -217,12 +213,9 @@ public class FabricaHabitaciones {
         String descripcion = "¡Hab5!";
         String[] dialogo = {" "};
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
-        }
+   
 
-        String[] pistas = {"Pistas de la habitación 5"};
+        String pistas = "Pistas de la habitación 5";
         System.out.print("Presiona Enter para continuar...");
         sc.nextLine();
         Temp.LimpiarPantalla();
@@ -234,12 +227,9 @@ public class FabricaHabitaciones {
         String descripcion = "¡Hab6!";
         String[] dialogo = {" "};
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
-        }
+    
 
-        String[] pistas = {"Pistas de la habitación 6"};
+        String pistas = "Pistas de la habitación 6";
         System.out.print("Presiona Enter para continuar...");
         sc.nextLine();
         Temp.LimpiarPantalla();
@@ -251,12 +241,9 @@ public class FabricaHabitaciones {
         String descripcion = "¡Hab7!";
         String[] dialogo = {" "};
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
-        }
+   
 
-        String[] pistas = {"Pistas de la habitación 7"};
+        String pistas = "Pistas de la habitación 7";
         System.out.print("Presiona Enter para continuar...");
         sc.nextLine();
         Temp.LimpiarPantalla();
@@ -268,12 +255,9 @@ public class FabricaHabitaciones {
         String descripcion = "¡Hab8!";
         String[] dialogo = {" "};
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
-        }
 
-        String[] pistas = {"Pistas de la habitación 8"};
+
+        String pistas = "Pistas de la habitación 8";
         System.out.print("Presiona Enter para continuar...");
         sc.nextLine();
         Temp.LimpiarPantalla();
@@ -285,18 +269,15 @@ public class FabricaHabitaciones {
         String descripcion = "¡Hab9!";
         String[] dialogo = {" "};
 
-        for (String linea : dialogo) {
-            System.out.println(linea);
-            Temp.Temporizador(2000); 
-        }
 
-        String[] pistas = {"Pistas de la habitación 9"};
+        String pistas = "Pistas de la habitación 9";
         System.out.print("Presiona Enter para continuar...");
         sc.nextLine();
         Temp.LimpiarPantalla();
 
         return new Habitacion(descripcion, dialogo, pistas, null, null);
     }
+
 
     
     

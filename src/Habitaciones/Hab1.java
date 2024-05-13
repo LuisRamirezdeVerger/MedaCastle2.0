@@ -6,18 +6,7 @@ import extras.*;
 public class Hab1 {
    
     static Scanner sc = new Scanner(System.in);
-    public static void muestraInfo (){
-        
-        Temp.LimpiarPantalla();
-        System.out.println("Te quedas en shock con la cara un tanto descompuesta...");
-        Temp.Temporizador(2000);
-        System.out.println("Después de unos minutos mirando a la puerta como alguien de poco IQ, decides que será divertido explorar un castillo abandonado. ");
-        Temp.Temporizador(2000);
-        System.out.println("Pronto llegarán. -Piensas-");
-        Temp.Temporizador(1500);
-        System.out.println("¿Qué quieres hacer?");
-        
-    }  
+
     public static void muestraInfo2 (){
         
         //esqueleto, atacar, +1 contadrKills
@@ -45,8 +34,4 @@ public class Hab1 {
         
     } 
 
-    public static void pistasHab1(){
-        //Rellenar
-        System.out.println("Pistas de la habitación 1");
-    }
 }

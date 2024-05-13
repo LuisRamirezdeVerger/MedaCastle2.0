@@ -6,10 +6,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Hola Mundo!");
-		habitaciones.Habitacion tutorial = FabricaHabitaciones.creaHabTuto();
-		tutorial.getDescripcion();
+		Habitacion tutorial = FabricaHabitaciones.creaHabTuto();
+
+		//tutorial.getDialogo(asdas);
+
+		System.out.println(tutorial.getPistas());
 		
+		//tutorial.getPistas(asd);
 	}
 
 }

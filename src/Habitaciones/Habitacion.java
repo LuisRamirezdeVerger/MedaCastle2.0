@@ -7,7 +7,7 @@ public class Habitacion {
 
     private String descripcion;
     private String[] dialogo;
-    private String[] pistas;
+    private String pistas;
     private Objeto objetos;
     private Enemigo enemigo;
 
@@ -21,7 +21,7 @@ public class Habitacion {
 
      
     // Constructor
-    public Habitacion(String descripcion, String[] dialogo, String[] pistas, Objeto objetos, Enemigo enemigo) {
+    public Habitacion(String descripcion, String[] dialogo, String pistas, Objeto objetos, Enemigo enemigo) {
         this.descripcion = descripcion;
         this.dialogo = dialogo;
         this.pistas = pistas;
@@ -46,11 +46,11 @@ public class Habitacion {
         this.dialogo = newDialogo;
     }
 
-    public String[] getPistas() {
+    public String getPistas() {
         return pistas;
     }
 
-    public void setPistas(String[] newPistas) {
+    public void setPistas(String newPistas) {
         this.pistas = newPistas;
     }
 
@@ -70,10 +70,12 @@ public class Habitacion {
         this.enemigo = enemigo;
     }
 
+    /* 
     public void mostrarPistas() {
         System.out.println("Pistas:");
         for (String pista : pistas) {
             System.out.println(" " + pista);
         }
     }
+    */
 }
