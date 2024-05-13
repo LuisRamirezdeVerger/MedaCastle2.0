@@ -65,7 +65,7 @@ public class FabricaHabitaciones {
             "~ Exclama un compañero ~ A todos os parece una buena idea, y sin dudar, partís.",
             "Seguís las indicaciones de la persona al cargo, y, tras 9 minutos, llegáis al castillo.",
             "Es un castillo de lo más normal, con su puente levadizo",
-            " torretas para catapultas y varios puntos estrátegicos necesarios en la época.",
+            " torretas para catapultas y varios puntos estratégicos necesarios en la época.",
             "Está un poco en ruinas, tiene varias brechas en los muros, el río está seco y...",
             "Ahora que lo miras detenidamente, tu corazón empieza a acelerarse.",
             "Sientes una extraña sensación y te planteas dar media vuelta...", 
@@ -249,7 +249,7 @@ public class FabricaHabitaciones {
         "Sala 6. La Biblioteca de Medac",
         "Estás en la sala 6 por fin, después de una lucha a vida o muerte con el ente de la sala 3. La biblioteca tiene chimenea y el suelo y las paredes enmoquetadas. Las estanterías son kilométricas",
         "Una biblioteca parece un sitio amable para tomar un respiro. Te diriges lentamente hacia el sillón que hay, pero empiezas a notar cómo las luces empiezan a decaer",
-        "Todo se está oscureciendo y puedes ver claramente cómo en una de las paredes va apareciendo un mensaje fluorencente",
+        "Todo se está oscureciendo y puedes ver claramente cómo en una de las paredes va apareciendo un mensaje fluorescente",
         "Estás tranquil@, nada parece amenazante ahora. Te sientas y esperas a poder leer bien el mensaje",
         "Este es el mensaje que aparece en la pared: Me pinché con una rueca y cien años me dormí, hasta que un beso del príncipe hizo que volviese en mí.",
         "Sabes que ese mensaje es de una película que te recuerda a tu infancia...",
@@ -369,7 +369,7 @@ public class FabricaHabitaciones {
         
         "Al darte la vuelta entre una neblina (que antes no estaba) se empieza a perfilar ni más ni menos... ¡QUE UN MEDACGORGON!",
         "Su presencia induce un escalofrío en el más valiente. La piel, rugosa y pálida, parece absorber la luz, dejando solo sus ojos brillantes y malévolos visibles. Colmillos afilados asoman de su boca entreabierta, y sus garras arañan el aire con cada movimiento",
-        "¡VA DIRECTO HACIA T�?!",
+        "¡VA DIRECTO HACIA TÍ?!",
          // tiene que luchar
         
         };
