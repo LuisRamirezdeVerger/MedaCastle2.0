@@ -48,4 +48,9 @@ public class Jugador {
     public void setDefensa(int newDefensa) {
         this.defensa = newDefensa;
     }
+
+    public void totalDmg() {
+        //Método para calcular el daño total
+        
+    }
 }

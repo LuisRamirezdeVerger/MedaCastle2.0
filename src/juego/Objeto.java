@@ -3,7 +3,7 @@ package juego;
 public class Objeto {
     private String nombre;
     private int durabilidad;
-    private Integer dmgValor; // Integer para poder ser null
+    private static Integer dmgValor; // Integer para poder ser null
     private Integer healValor;
     private Inventario inventario;
 
@@ -33,12 +33,12 @@ public class Objeto {
         this.durabilidad = newDurabilidad;
     }
 
-    public Integer getDmgValor() {
+    public static Integer getDmgValor() {
         return dmgValor;
     }
 
-    public void setDmgValor(Integer newDmgValor) {
-        this.dmgValor = newDmgValor;
+    public static void setDmgValor(Integer newDmgValor) {
+        Objeto.dmgValor = newDmgValor;
     }
 
     public Integer getHealValor() {

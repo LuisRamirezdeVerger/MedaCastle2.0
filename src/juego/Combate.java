@@ -59,7 +59,7 @@ public class Combate {
 
         switch (opcion) {
             case 1:
-                int dmgJugador = calcularDmg(jugador.getAtaque(), enemigo.getDefensa());
+                int dmgJugador = calcularDmg(jugador.getAtaque() + jugador.getAtaque(), enemigo.getDefensa());
                 System.out.println("Haces " + dmgJugador + " de daño a " + enemigo.getNombre());
                 Temp.Temporizador(2000);
                 enemigo.setVida(enemigo.getVida() - dmgJugador);  

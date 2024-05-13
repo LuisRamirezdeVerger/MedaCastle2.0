@@ -14,9 +14,9 @@ public class Main {
 		System.out.println(tutorial.getPistas());
 		
 		//tutorial.getPistas(asd);
-
-		
-			Jugador jugador = new Jugador("Jugador", 100, 10, 5);
+			//Prueba de combate con un objeto 
+			Objeto espada = new Objeto("Espada", 100, 10, null);
+			Jugador jugador = new Jugador("Jugador", 100, 10 + Objeto.getDmgValor(), 5);
 			Enemigo enemigo = new Enemigo("Lord medac", 50, 10, 2);
 			Combate combate = new Combate(jugador, enemigo);
 			combate.iniciarCombate();	
