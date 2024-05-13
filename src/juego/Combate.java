@@ -32,7 +32,7 @@ public class Combate {
     }
 
     public void iniciarCombate() {
-        System.out.println("Combate iniciado");
+        System.out.println("Combate iniciado contra " + enemigo.getNombre());
         
         while (jugador.getVida() > 0 && enemigo.getVida() > 0) {
             turnoJugador();
@@ -66,16 +66,14 @@ public class Combate {
                 break;
             case 2:
                 // Curar
-                //Debe de posser una poción en el inventario
+                // Debe de posser una poción en el inventario
                 jugador.setVida(jugador.getVida() + 10);
                 Temp.Temporizador(2000);
-                System.out.println("Te curas 10 puntos de vida");
+                System.out.println("Te curas 10 puntos de vida. ");
                 break;
             default:
                 break;
         }
-
-        
     }
 
     private int calcularDmg(int ataque, int defensa) {
@@ -83,9 +81,10 @@ public class Combate {
     }
 
     private void turnoEnemigo(){
-        System.out.println("Turno del enemigo");
+        System.out.println("Turno del enemigo. ");
+        Temp.Temporizador(2000);
         int dmgEnemigo = calcularDmg(enemigo.getAtaque(), jugador.getDefensa());
-        System.out.println(enemigo.getNombre() + " te hace " + dmgEnemigo + " de daño");
+        System.out.println(enemigo.getNombre() + " te hace " + dmgEnemigo + " de daño. ");
         jugador.setVida(jugador.getVida() - dmgEnemigo);
     }
    

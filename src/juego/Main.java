@@ -17,7 +17,7 @@ public class Main {
 
 		
 			Jugador jugador = new Jugador("Jugador", 100, 10, 5);
-			Enemigo enemigo = new Enemigo("Enemigo", 50, 10, 2);
+			Enemigo enemigo = new Enemigo("Lord medac", 50, 10, 2);
 			Combate combate = new Combate(jugador, enemigo);
 			combate.iniciarCombate();	
 		
