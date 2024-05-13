@@ -37,7 +37,8 @@ public class Hab0 {
         sc.nextLine();
         
         Temp.LimpiarPantalla();
-        Hab1.muestraInfo();
+        //Hab1.muestraInfo();
+        System.out.println("hola mundo");
  
     }    
 
