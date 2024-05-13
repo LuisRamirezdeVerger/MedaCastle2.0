@@ -1,5 +1,6 @@
 package juego;
 import habitaciones.*;
+import personajes.*;
 
 
 public class Main {
@@ -13,6 +14,13 @@ public class Main {
 		System.out.println(tutorial.getPistas());
 		
 		//tutorial.getPistas(asd);
+
+		
+			Jugador jugador = new Jugador("Jugador", 100, 10, 5);
+			Enemigo enemigo = new Enemigo("Enemigo", 50, 10, 2);
+			Combate combate = new Combate(jugador, enemigo);
+			combate.iniciarCombate();	
+		
 	}
 
 }

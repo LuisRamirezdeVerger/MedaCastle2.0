@@ -3,14 +3,14 @@ package personajes;
 public class Enemigo {
 
     private String nombre;
-    private int salud;
+    private int vida;
     private int ataque;
     private int defensa;
 
 
-    public Enemigo(String nombre, int salud, int ataque, int defensa){
+    public Enemigo(String nombre, int vida, int ataque, int defensa){
         this.nombre = nombre;
-        this.salud = salud;
+        this.vida = vida;
         this.ataque = ataque;
         this.defensa = defensa;
     }
@@ -23,12 +23,12 @@ public class Enemigo {
         this.nombre = newNombre;
     }
 
-    public int getSalud(){
-        return this.salud;
+    public int getVida(){
+        return this.vida;
     }  
 
-    public void setSalud(int newSalud){
-        this.salud = newSalud;
+    public void setVida(int newVida){
+        this.vida = newVida;
     }
 
     public int getAtaque(){
