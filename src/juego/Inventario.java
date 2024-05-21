@@ -22,13 +22,13 @@ public class Inventario {
     }
 
     public void mostrarInventario() {
-        System.out.println("Inventario de la habitación:");
+        System.out.println("Inventario de la habitación: ");
         if (!objetos.isEmpty()) {
             for (Objeto objeto : objetos) {
                 System.out.println("- " + objeto.getNombre() + ": Durabilidad " + objeto.getDurabilidad());
             }
         } else {
-            System.out.println("El inventario de la habitación está vacío.");
+            System.out.println("Tu inventario está vacío. ");
         }
     }
 

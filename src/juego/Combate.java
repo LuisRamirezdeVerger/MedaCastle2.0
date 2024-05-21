@@ -54,12 +54,13 @@ public class Combate {
         System.out.println("Vida del jugador: " + jugador.getVida());
         System.out.println("1. Atacar");
         System.out.println("2. Curar");
+        System.out.println("3. Ver inventario");
 
         int opcion = sc.nextInt();
 
         switch (opcion) {
             case 1:
-                int dmgJugador = calcularDmg(jugador.getAtaque() + jugador.getAtaque(), enemigo.getDefensa());
+                int dmgJugador = calcularDmg(jugador.getAtaque(), enemigo.getDefensa());
                 System.out.println("Haces " + dmgJugador + " de daño a " + enemigo.getNombre());
                 Temp.Temporizador(2000);
                 enemigo.setVida(enemigo.getVida() - dmgJugador);  
@@ -71,9 +72,16 @@ public class Combate {
                 Temp.Temporizador(2000);
                 System.out.println("Te curas 10 puntos de vida. ");
                 break;
+            case 3:
+                // Ver inventario
+                // Gebe implementarse
+                //jugador.getInventario().mostrarInventario();
+                break;
             default:
                 break;
         }
+
+        
     }
 
     private int calcularDmg(int ataque, int defensa) {
