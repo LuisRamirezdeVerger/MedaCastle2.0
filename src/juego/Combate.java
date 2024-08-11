@@ -55,6 +55,7 @@ public class Combate {
         System.out.println("1. Atacar");
         System.out.println("2. Curar");
         System.out.println("3. Ver inventario");
+        System.out.println("4. Salir");
 
         int opcion = sc.nextInt();
 

@@ -60,7 +60,6 @@ public class Objeto {
     // Método para usar el objeto
     //hay que probarlo
     public void reducirDurabilidad() {
-        
         if (this.durabilidad > 0) {
             this.durabilidad--;
         } else {
@@ -68,10 +67,12 @@ public class Objeto {
             System.out.println("El objeto " + this.nombre + " se ha roto, no podrás usarlo más.");
             inventario.eliminarObjeto(this);
         }
-        //if (this.durabilidad == 0) {
-        //    System.out.println("El objeto " + this.nombre + " se ha roto.");
-        //    Inventario.eliminarObjeto();
-        //}
+    }
+
+    //Método para controlar el uso del objeto
+    public void conseguirObjeto() {
+        Inventario inventario = this.getInventario();
+        inventario.agregarObjeto(this);
     }
 
     

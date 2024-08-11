@@ -59,7 +59,7 @@ public class FabricaHabitaciones {
     }
 
     public static Habitacion creaHabTuto(){
-        String descripcion = "¡HabFinal!";
+        String descripcion = "¡HabTuto!";
         String[] dialogo = {
             "- ¡Bien! Tampoco tenemos nada mejor que hacer, vayamos al castillo!.", 
             "~ Exclama un compañero ~ A todos os parece una buena idea, y sin dudar, partís.",
@@ -72,28 +72,8 @@ public class FabricaHabitaciones {
             "¿Uh? Estás bien, colega? -Te preguntan."
         };
 
-        /* 
-        System.out.print("Elige tu respuesta: " );
-        Temp.Temporizador(2000);
-        System.out.println("\nMenú: \n1.- Sí.\n2.- No.");
-        int eleccion = sc.nextInt();
-        switch (eleccion) {
-            case 1:
-                System.out.println("Perfecto! Justo ahí tenemos el castillo. ENTREMOS!!");
-                sc.nextLine();
-                break;
-            case 2:
-                System.out.println("Tranqui. Esos son los nervios de entrar al castillo. ¡Me pasa lo mismo! No te preocupes, lleva años en desuso y es una atracción como nos dijeron.");
-                sc.nextLine();
-                break;
-            default:
-                System.out.println("¿Cómo? No entendí bien");
-                break;
-       asdf }
-*/
         String pistas = "Pistas de la habitación final";
 
-        //Quizás sea necesario implementar  "LimpiarPantalla()" en
         Temp.LimpiarPantalla();
         //Ejemplo de enemigo
         Enemigo enemigoTuto = new Enemigo("Lord Medac", 100, 10, 5);
