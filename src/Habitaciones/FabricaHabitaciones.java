@@ -16,21 +16,21 @@ public class FabricaHabitaciones {
         "Bueno, ahora lo veréis... ¡Esperamos que os guste! :) ", 
         "Como podéis comprobar, el juego carece de gráficos. Por tanto, sugerimos que leáis detenidamente.", 
         "La respuesta puede estar en el texto... ",
-        "En serio...", "...", "Responde con cuidado... ", "¡Esperamos que lo disfrutéis! "
+        "En serio...", "...", "Responde con cuidado... ", "¡Esperamos que lo disfrutéis! ", "Presiona Enter para continuar... "
         };
 
+        //implementar donde queramos imprimir
         //for (String linea : dialogo) {
         //    System.out.println(linea);
         //    Temp.Temporizador(3000); // Pausa de 3 segundos entre cada línea
         //}
 
-        String pistas = "Puedes ver una llave tirada en el suelo. ";
-        System.out.print("Presiona Enter para continuar... ");
-        sc.nextLine();
+        //String pistas = "Puedes ver una llave tirada en el suelo. ";
+        //sc.nextLine();
         Temp.LimpiarPantalla();
 
         //Arreglar
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, null, null, null);
     }
 
     public static Habitacion creaHabIntro(){
@@ -51,8 +51,8 @@ public class FabricaHabitaciones {
 
 
         String pistas = "Pistas del tutorial";
-        System.out.print("Presiona Enter para continuar...");
-        sc.nextLine();
+        //System.out.print("Presiona Enter para continuar...");
+        //sc.nextLine();
         Temp.LimpiarPantalla();
 
         return new Habitacion(descripcion, dialogo, pistas, null, null);
@@ -115,8 +115,8 @@ public class FabricaHabitaciones {
             //Aquí agregar un menú para que el jugador pueda elegir si quiere seguir o no
 
         String pistas = "Pistas de la habitación 1";
-        System.out.print("Presiona Enter para continuar...");
-        sc.nextLine();
+        //System.out.print("Presiona Enter para continuar...");
+        //sc.nextLine();
         Temp.LimpiarPantalla();
 
         return new Habitacion(descripcion, dialogo, pistas, null, null);

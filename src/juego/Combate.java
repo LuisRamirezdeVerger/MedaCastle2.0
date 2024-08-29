@@ -78,6 +78,10 @@ public class Combate {
                 // Gebe implementarse
                 //jugador.getInventario().mostrarInventario();
                 break;
+            case 4:
+                // Salir
+                System.out.println("Has salido del combate. ");
+                break;
             default:
                 break;
         }
