@@ -46,16 +46,16 @@ public class FabricaHabitaciones {
             "Necesitamos que dejéis las instalaciones tan solo una hora. Para entonces todo estará resuelto.",
             "Sabemos que acabáis de llegar, nos ha surgido un imprevisto. Os recompensaremos por las molestias.",
             "Estamos en terrenos de 'Lord Medac', Conde de estas tierras. Si miráis al norte al salir, veréis su castillo. ¡Es una gran atracción en el lugar!",
-            "Bueno, he de seguir con la ruta de aviso, luego nos vemos. ¡Disfrutad de la exploración!",
+            "Bueno, he de seguir con la ruta de aviso, luego nos vemos. ¡Disfrutad de la exploración!", "Presiona Enter para continuar... "
             };
 
 
-        String pistas = "Pistas del tutorial";
+        //String pistas = "Pistas del tutorial";
         //System.out.print("Presiona Enter para continuar...");
         //sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, null, null, null);
     }
 
     public static Habitacion creaHabTuto(){
