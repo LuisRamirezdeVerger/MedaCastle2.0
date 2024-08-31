@@ -61,7 +61,7 @@ public class FabricaHabitaciones {
     public static Habitacion creaHabTuto(){
         String descripcion = "¡HabTuto!";
         String[] dialogo = {
-            "- ¡Bien! Tampoco tenemos nada mejor que hacer, vayamos al castillo!.", 
+            "- ¡Bien! Tampoco tenemos nada mejor que hacer, vayamos al castillo!.",
             "~ Exclama un compañero ~ A todos os parece una buena idea, y sin dudar, partís.",
             "Seguís las indicaciones de la persona al cargo, y, tras 9 minutos, llegáis al castillo.",
             "Es un castillo de lo más normal, con su puente levadizo",
@@ -109,8 +109,7 @@ public class FabricaHabitaciones {
         String[] dialogo = {
             "Te quedas en shock con la cara un tanto descompuesta...",
             "Después de unos minutos mirando a la puerta como alguien de poco IQ, decides que será divertido explorar un castillo abandonado. ",
-            "Pronto llegarán. -Piensas-",
-            "¿Qué quieres hacer?"
+            "Pronto llegarán. -Piensas-"
         };
             //Aquí agregar un menú para que el jugador pueda elegir si quiere seguir o no
 

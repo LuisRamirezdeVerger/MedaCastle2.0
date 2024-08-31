@@ -6,6 +6,7 @@ import java.util.Scanner;
 import extras.*;
 import habitaciones.*;
 //import personajes.*;
+import personajes.Jugador;
 
 public class Main {
 	private static Scanner sc = new Scanner(System.in);
@@ -59,17 +60,35 @@ public class Main {
 		}
 
 		String respuesta = sc.nextLine();
-		System.out.println("¿Quieres ir al castillo? ¿Si o no?");
 		while (!respuesta.toLowerCase().equals("si")) {
-			
+			System.out.println("- ¿Cómo? No te he oído bien, ¿Quieres ir al castillo?");
 			respuesta = sc.nextLine();
-			if (respuesta.toLowerCase().equals("si")) {
-				System.out.println("Muy bien, vamos a empezar");
-				// Siguiente paso
-			} else {
-				// Debe preguntar si quiere volver a intentarlo
-				System.out.println("- ¿Cómo? No te he oído bien, ¿Quieres ir al castillo?");
-			}
+		}
+
+		espera();
+
+		for (String linea : hab0.getDialogo()) {
+			System.out.println(linea);
+			Temp.Temporizador(0000);
+		}
+
+		espera();
+
+		for (String linea : hab1.getDialogo()) {
+			System.out.println(linea);
+			Temp.Temporizador(2000);
+		}
+
+		System.out.println("¿Qué quieres hacer?");
+		Jugador.menu();
+		String opcion = sc.nextLine();
+		if (opcion.equals("1")) {
+			Jugador.moverse();
+		} else if (opcion.equals("2")) {
+			System.out.println("Inventario");
+		} else {
+			System.out.println("No has hecho nada");
+
 		}
 
 		/*
