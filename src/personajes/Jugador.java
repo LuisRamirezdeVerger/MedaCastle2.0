@@ -23,7 +23,7 @@ public class Jugador {
         this.vida = 10;
         this.ataque = 2;
         this.defensa = 0;
-        this.posicion = new Posicion(0, 0);
+        Jugador.posicion = new Posicion(0, 0);
     }
 
     public String getNombre() {
@@ -63,7 +63,7 @@ public class Jugador {
     }
 
     public void setPosicion(Posicion posicion) {
-        this.posicion = posicion;
+        Jugador.posicion = posicion;
     }
 
     public void totalDmg() {

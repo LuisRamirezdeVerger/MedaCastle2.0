@@ -4,10 +4,10 @@ import extras.*;
 import juego.*;
 import personajes.*;
 
-import java.util.*;
+//import java.util.*;
 
 public class FabricaHabitaciones {
-    private static Scanner sc = new Scanner (System.in);
+    //private static Scanner sc = new Scanner (System.in);
 
     public static Habitacion creaHabitacionPresentacion(){
         String descripcion = "¡Bienvenid@s al interciclo de 1º de Desarrollo de Aplicaciones Multiplataforma! ";

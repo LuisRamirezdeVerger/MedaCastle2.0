@@ -4,7 +4,7 @@ public class Objeto {
     private String nombre;
     private int durabilidad;
     private static Integer dmgValor; // Integer para poder ser null
-    private Integer healValor;
+    private static Integer healValor;
     private Inventario inventario;
 
 
@@ -13,8 +13,8 @@ public class Objeto {
     public Objeto(String nombre, int durabilidad, Integer dmgValor, Integer healValor) {
         this.nombre = nombre;
         this.durabilidad = durabilidad;
-        this.dmgValor = dmgValor;
-        this.healValor = healValor;
+        Objeto.dmgValor = dmgValor;
+        Objeto.healValor = healValor;
     }
 
     public String getNombre() {
@@ -46,7 +46,7 @@ public class Objeto {
     }
 
     public void setHealValor(Integer newHealValor) {
-        this.healValor = newHealValor;
+        Objeto.healValor = newHealValor;
     }
 
     public Inventario getInventario() {
