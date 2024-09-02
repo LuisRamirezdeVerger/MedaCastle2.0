@@ -11,10 +11,11 @@ public class FabricaHabitaciones {
     //private static Scanner sc = new Scanner (System.in);
     public static void inicializarHabitaciones() {
         // Crear y asignar habitaciones a posiciones específicas
-        habitaciones.put(new Posicion(0, 0), creaHabitacionPresentacion());
-        habitaciones.put(new Posicion(0, 0), creaHabIntro());
-        habitaciones.put(new Posicion(0, 0), creaHabTuto());
-        habitaciones.put(new Posicion(0, 0), creaHabitacionHab0());
+        //Las 4 primeras carecen de posicion, ya que no es necesario
+        //habitaciones.put(new Posicion(0, 0), creaHabitacionPresentacion());
+        //habitaciones.put(new Posicion(0, 0), creaHabIntro());
+        //habitaciones.put(new Posicion(0, 0), creaHabTuto());
+        //habitaciones.put(new Posicion(0, 0), creaHabitacionHab0());
         habitaciones.put(new Posicion(2, 0), creaHabitacionHab1());
         habitaciones.put(new Posicion(2, 1), creaHabitacionHab2());
         habitaciones.put(new Posicion(2, 2), creaHabitacionHab3());
@@ -49,7 +50,7 @@ public class FabricaHabitaciones {
         Temp.LimpiarPantalla();
 
         //Arreglar
-        return new Habitacion(descripcion, dialogo, null, null, null);
+        return new Habitacion(descripcion, dialogo, null, null, null, null, null, null, null);
     }
 
     public static Habitacion creaHabIntro(){
@@ -74,7 +75,7 @@ public class FabricaHabitaciones {
         //sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, null, null, null);
+        return new Habitacion(descripcion, dialogo, null, null, null, null, null, null, null);
     }
 
     public static Habitacion creaHabTuto(){
@@ -99,7 +100,7 @@ public class FabricaHabitaciones {
         //Puede dar fallos, pero es un ejemplo
         Objeto llave = new Objeto("Llave", 1, null, null);
 
-        return new Habitacion(descripcion, dialogo, pistas, llave, enemigoTuto);
+        return new Habitacion(descripcion, dialogo, pistas, llave, enemigoTuto, null, null, null, null);
     }
 
     public static Habitacion creaHabitacionHab0(){
@@ -120,7 +121,7 @@ public class FabricaHabitaciones {
 
         String pistas = "Pistas de la habitación 0";
  
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
     }
 
     public static Habitacion creaHabitacionHab1(){
@@ -137,7 +138,7 @@ public class FabricaHabitaciones {
         //sc.nextLine();
         Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
     }
     public static Habitacion creaHabitacionHab2(){
         String descripcion = "¡Hab2!";
@@ -162,7 +163,7 @@ public class FabricaHabitaciones {
         //sc.nextLine();
         //Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
     }
 
     public static Habitacion creaHabitacionHab3(){
@@ -190,7 +191,7 @@ public class FabricaHabitaciones {
         //sc.nextLine();
         //Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
     }
 
     public static Habitacion creaHabitacionHab4(){
@@ -223,7 +224,7 @@ public class FabricaHabitaciones {
         //sc.nextLine();
         //Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
     }
 
     public static Habitacion creaHabitacionHab5(){
@@ -237,7 +238,7 @@ public class FabricaHabitaciones {
         //sc.nextLine();
         //Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
     }
 
     public static Habitacion creaHabitacionHab6(){
@@ -267,7 +268,7 @@ public class FabricaHabitaciones {
         //sc.nextLine();
         //Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
     }
 
     public static Habitacion creaHabitacionHab7(){
@@ -299,7 +300,7 @@ public class FabricaHabitaciones {
         //sc.nextLine();
         //Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
     }
 
     public static Habitacion creaHabitacionHab8(){
@@ -333,7 +334,7 @@ public class FabricaHabitaciones {
         //sc.nextLine();
         //Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
     }
 
     public static Habitacion creaHabitacionHab9(){
@@ -378,7 +379,7 @@ public class FabricaHabitaciones {
         //sc.nextLine();
         //Temp.LimpiarPantalla();
 
-        return new Habitacion(descripcion, dialogo, pistas, null, null);
+        return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
     }
 
 
