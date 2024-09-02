@@ -3,12 +3,31 @@ package habitaciones;
 import extras.*;
 import juego.*;
 import personajes.*;
-
-//import java.util.*;
+import java.util.*;
 
 public class FabricaHabitaciones {
-    //private static Scanner sc = new Scanner (System.in);
 
+    private static final Map<Posicion, Habitacion> habitaciones = new HashMap<>();
+    //private static Scanner sc = new Scanner (System.in);
+    public static void inicializarHabitaciones() {
+        // Crear y asignar habitaciones a posiciones específicas
+        habitaciones.put(new Posicion(0, 0), creaHabitacionPresentacion());
+        habitaciones.put(new Posicion(0, 0), creaHabIntro());
+        habitaciones.put(new Posicion(0, 0), creaHabTuto());
+        habitaciones.put(new Posicion(0, 0), creaHabitacionHab0());
+        habitaciones.put(new Posicion(2, 0), creaHabitacionHab1());
+        habitaciones.put(new Posicion(2, 1), creaHabitacionHab2());
+        habitaciones.put(new Posicion(2, 2), creaHabitacionHab3());
+        habitaciones.put(new Posicion(1, 0), creaHabitacionHab4());
+        habitaciones.put(new Posicion(1, 1), creaHabitacionHab5());
+        habitaciones.put(new Posicion(1, 2), creaHabitacionHab6());
+        habitaciones.put(new Posicion(0, 0), creaHabitacionHab7());
+        habitaciones.put(new Posicion(0, 1), creaHabitacionHab8());
+        habitaciones.put(new Posicion(0, 2), creaHabitacionHab9());
+
+        // Añadir más habitaciones según sea necesario
+    }
+    
     public static Habitacion creaHabitacionPresentacion(){
         String descripcion = "¡Bienvenid@s al interciclo de 1º de Desarrollo de Aplicaciones Multiplataforma! ";
         String[] dialogo = {
@@ -18,7 +37,7 @@ public class FabricaHabitaciones {
         "La respuesta puede estar en el texto... ",
         "En serio...", "...", "Responde con cuidado... ", "¡Esperamos que lo disfrutéis! ", "Presiona Enter para continuar... "
         };
-
+        
         //implementar donde queramos imprimir
         //for (String linea : dialogo) {
         //    System.out.println(linea);

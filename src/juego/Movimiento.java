@@ -1,7 +1,7 @@
 package juego;
 
 import personajes.*;
-import extras.*;
+//import extras.*;
 
 public class Movimiento {
 

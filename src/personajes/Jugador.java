@@ -1,7 +1,6 @@
 package personajes;
 
 import java.util.*;
-
 import extras.*;
 
 public class Jugador {
@@ -12,10 +11,6 @@ public class Jugador {
     private int defensa;
     private static Posicion posicion;
     private static Scanner sc = new Scanner(System.in);
-    // PodrÃƒÂ­an agregarse mÃƒÂ¡s atributos como velocidad, nivel, etc.
-    // private int velocidad;
-    // private int nivel;
-    
 
 
     public Jugador(String nombre, int vida, int ataque, int defensa, Posicion posicion) {
@@ -74,17 +69,22 @@ public class Jugador {
     public static void menu() {
        System.out.println("1.- Moverme ");
        System.out.println("2.- Ver inventario ");
-       System.out.println("3.- Salir ");
+       System.out.println("3.- Buscar pistas ");
+       System.out.println("4.- Salir ");
     }
 
     public static void menuCombateActivado(){
         System.out.println("1.- Moverme ");
         System.out.println("2.- Ver inventario ");
-        System.out.println("3.- Atacar ");
-        System.out.println("4.- Salir ");
+        System.out.println("3.- Buscar pistas ");
+        System.out.println("4.- Atacar ");
+        System.out.println("5.- Salir ");
     }
 
     public static void moverse() {
+        //Cambiar luego, solo para pruebas
+        System.out.println(posicion);
+        //Cambiar luego, solo para pruebas
         System.out.println("¿A dónde quieres moverte?");
         String direccion = sc.nextLine();
         switch (direccion.toLowerCase()) {
@@ -105,5 +105,8 @@ public class Jugador {
                 System.out.println("Dirección no válida");
                 break;
         }
+        //Cambiar luego, solo para pruebas
+        System.out.println(posicion);
+        //Cambiar luego, solo para pruebas
     }
 }

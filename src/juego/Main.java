@@ -5,8 +5,7 @@ import java.util.Scanner;
 
 import extras.*;
 import habitaciones.*;
-//import personajes.*;
-import personajes.Jugador;
+import personajes.*;
 
 public class Main {
 	private static Scanner sc = new Scanner(System.in);
@@ -18,6 +17,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		Jugador jugador = new Jugador("Jugador", 100, 10, 5, new Posicion(0, 0));
 		// Llamada a la habitacion de presentacion para poder interactuar con ella
 		Habitacion presentacion = FabricaHabitaciones.creaHabitacionPresentacion();
 		Habitacion intro = FabricaHabitaciones.creaHabIntro();
@@ -76,7 +76,7 @@ public class Main {
 
 		for (String linea : hab1.getDialogo()) {
 			System.out.println(linea);
-			Temp.Temporizador(2000);
+			Temp.Temporizador(0000);
 		}
 
 		System.out.println("¿Qué quieres hacer?");
