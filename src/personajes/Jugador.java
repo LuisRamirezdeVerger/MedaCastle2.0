@@ -2,6 +2,7 @@ package personajes;
 
 import java.util.*;
 import extras.*;
+import habitaciones.*;
 
 public class Jugador {
 
@@ -12,13 +13,12 @@ public class Jugador {
     private static Posicion posicion;
     private static Scanner sc = new Scanner(System.in);
 
-
     public Jugador(String nombre, int vida, int ataque, int defensa, Posicion posicion) {
         this.nombre = nombre;
         this.vida = 10;
         this.ataque = 2;
         this.defensa = 0;
-        Jugador.posicion = new Posicion(0, 0);
+        Jugador.posicion = new Posicion(2, 0);
     }
 
     public String getNombre() {
@@ -67,13 +67,13 @@ public class Jugador {
     }
 
     public static void menu() {
-       System.out.println("1.- Moverme ");
-       System.out.println("2.- Ver inventario ");
-       System.out.println("3.- Buscar pistas ");
-       System.out.println("4.- Salir ");
+        System.out.println("1.- Moverme ");
+        System.out.println("2.- Ver inventario ");
+        System.out.println("3.- Buscar pistas ");
+        System.out.println("4.- Salir ");
     }
 
-    public static void menuCombateActivado(){
+    public static void menuCombateActivado() {
         System.out.println("1.- Moverme ");
         System.out.println("2.- Ver inventario ");
         System.out.println("3.- Buscar pistas ");
@@ -82,31 +82,57 @@ public class Jugador {
     }
 
     public static void moverse() {
-        //Cambiar luego, solo para pruebas
+        // Cambiar luego, solo para pruebas
         System.out.println(posicion);
-        //Cambiar luego, solo para pruebas
+        // Cambiar luego, solo para pruebas
         System.out.println("¿A dónde quieres moverte?");
         String direccion = sc.nextLine();
+        Habitacion habitacionActual = FabricaHabitaciones.getHabitacion(posicion);
+        Habitacion habitacionNueva = null;
+
         switch (direccion.toLowerCase()) {
             case "norte":
-                posicion.setY(posicion.getY() - 1);
-                System.out.println(posicion);
+                habitacionNueva = habitacionActual.getNorte();
                 break;
             case "sur":
-                posicion.setY(posicion.getY() + 1);
+                habitacionNueva = habitacionActual.getSur();
                 break;
             case "este":
-                posicion.setX(posicion.getX() + 1);
+                habitacionNueva = habitacionActual.getEste();
                 break;
             case "oeste":
-                posicion.setX(posicion.getX() - 1);
+                habitacionNueva = habitacionActual.getOeste();
                 break;
             default:
                 System.out.println("Dirección no válida");
-                break;
+                return;
         }
-        //Cambiar luego, solo para pruebas
+
+        if (habitacionNueva != null) {
+            switch (direccion.toLowerCase()) {
+                case "norte":
+                    posicion.setX(posicion.getX() - 1);
+                    System.out.println(posicion);
+                    break;
+                case "sur":
+                    posicion.setX(posicion.getX() + 1);
+                    break;
+                case "este":
+                    posicion.setY(posicion.getY() + 1);
+                    break;
+                case "oeste":
+                    posicion.setY(posicion.getY() - 1);
+                    break;
+                default:
+                    System.out.println("Dirección no válida");
+                    break;
+            }
+            System.out.println("Te has movido a la habitación " + habitacionNueva.getDescripcion());
+        } else {
+            System.out.println("No puedes moverte en esa dirección");
+        }
+        // Cambiar luego, solo para pruebas
         System.out.println(posicion);
-        //Cambiar luego, solo para pruebas
+        // Cambiar luego, solo para pruebas
     }
 }

@@ -8,6 +8,11 @@ import java.util.*;
 public class FabricaHabitaciones {
 
     private static final Map<Posicion, Habitacion> habitaciones = new HashMap<>();
+
+    public static Habitacion getHabitacion(Posicion posicion) {
+        return habitaciones.get(posicion);
+    }
+    
     //private static Scanner sc = new Scanner (System.in);
     public static void inicializarHabitaciones() {
         // Crear y asignar habitaciones a posiciones específicas
@@ -380,9 +385,6 @@ public class FabricaHabitaciones {
         //Temp.LimpiarPantalla();
 
         return new Habitacion(descripcion, dialogo, pistas, null, null, null, null, null, null);
-    }
-
-
-    
+    }    
     
 }

@@ -34,9 +34,45 @@ public class Main {
 		Habitacion hab9 = FabricaHabitaciones.creaHabitacionHab9();
 
 		//Direccionamiento de las habitaciones
+		//Habitacion 1
 		hab1.setNorte(hab4);
 		hab1.setEste(hab2);
+		
+		//Habitacion 2
+		hab2.setNorte(hab5);
 		hab2.setOeste(hab1);
+
+		//Habitacion 3
+		hab3.setNorte(hab6);
+
+		//Habitacion 4
+		hab4.setNorte(hab7);
+		hab4.setSur(hab1);
+		hab4.setEste(hab5);
+		
+		//Habitacion 5
+		hab5.setNorte(hab8);
+		hab5.setSur(hab2);
+		hab5.setEste(hab6);
+		hab5.setOeste(hab4);
+
+		//Habitacion 6
+		hab6.setSur(hab3);
+		hab6.setOeste(hab5);
+
+		//Habitacion 7
+		hab7.setSur(hab4);
+		hab7.setEste(hab8);
+
+		//Habitacion 8
+		hab8.setSur(hab5);
+		hab8.setEste(hab9);
+		hab8.setOeste(hab7);
+
+		//Habitacion 9
+		hab9.setOeste(hab8);
+
+		
 		//SEGUIR DIRECCIONANDO!!!
 
 		// Muestra el array de dialogo de la habitacion en 1 sola linea
