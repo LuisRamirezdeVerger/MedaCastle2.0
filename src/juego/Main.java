@@ -18,7 +18,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		Jugador jugador = new Jugador("Jugador", 100, 10, 5, new Posicion(0, 0));
-		// Llamada a la habitacion de presentacion para poder interactuar con ella
+		// Llamada a la habitaciones para poder interactuar con ellas
 		Habitacion presentacion = FabricaHabitaciones.creaHabitacionPresentacion();
 		Habitacion intro = FabricaHabitaciones.creaHabIntro();
 		Habitacion tutorial = FabricaHabitaciones.creaHabTuto();
@@ -73,7 +73,23 @@ public class Main {
 		hab9.setOeste(hab8);
 
 		
-		//SEGUIR DIRECCIONANDO!!!
+		//Agregamos las habitaciones al mapa
+		
+		//Arreglar direccionamiento\\
+		FabricaHabitaciones.agregarHab(new Posicion(0, 0), presentacion);
+		FabricaHabitaciones.agregarHab(new Posicion(0, 1), intro);
+		FabricaHabitaciones.agregarHab(new Posicion(0, 2), tutorial);
+		FabricaHabitaciones.agregarHab(new Posicion(1, 0), hab0);
+		FabricaHabitaciones.agregarHab(new Posicion(1, 1), hab1);
+		FabricaHabitaciones.agregarHab(new Posicion(1, 2), hab2);
+		FabricaHabitaciones.agregarHab(new Posicion(2, 0), hab3);
+		FabricaHabitaciones.agregarHab(new Posicion(2, 1), hab4);
+		FabricaHabitaciones.agregarHab(new Posicion(2, 2), hab5);
+		FabricaHabitaciones.agregarHab(new Posicion(3, 0), hab6);
+		FabricaHabitaciones.agregarHab(new Posicion(3, 1), hab7);
+		FabricaHabitaciones.agregarHab(new Posicion(3, 2), hab8);
+		FabricaHabitaciones.agregarHab(new Posicion(4, 2), hab9);
+
 
 		// Muestra el array de dialogo de la habitacion en 1 sola linea
 		// System.out.println(Arrays.toString(FabricaHabitaciones.creaHabitacionPresentacion().getDialogo()));

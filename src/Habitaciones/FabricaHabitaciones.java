@@ -13,6 +13,11 @@ public class FabricaHabitaciones {
         return habitaciones.get(posicion);
     }
 
+    public static void agregarHab(Posicion posicion, Habitacion habitacion){
+        habitaciones.put(posicion, habitacion);
+    }
+    
+
     // private static Scanner sc = new Scanner (System.in);
     public static void inicializarHabitaciones() {
         // Creamos y asignamos habitaciones a posiciones específicas
