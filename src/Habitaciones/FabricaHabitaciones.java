@@ -93,6 +93,7 @@ public class FabricaHabitaciones {
                 "Sientes una extraña sensación y te planteas dar media vuelta...", 
                 "¿Uh? Estás bien, colega? -Te preguntan."
         });
+        
 
         Temp.LimpiarPantalla();
         // Ejemplo de enemigo
@@ -143,7 +144,7 @@ public class FabricaHabitaciones {
 
     public static Habitacion creaHabitacionHab2() {
         Habitacion habitacion = new Habitacion();
-        habitacion.setDescripcion("¡Hab2!");
+        habitacion.setDescripcion("El Pasillo");
         habitacion.setDialogo(new String[] {
                 "Entras en el pasillo y te paras. Parece un pasillo normal, pero sabes que no lo será.",
                 "Das un paso dudoso y piensas que tienes que tener más decisión si quieres llegar a la siguiente habitación.",
@@ -167,10 +168,9 @@ public class FabricaHabitaciones {
 
     public static Habitacion creaHabitacionHab3() {
         Habitacion habitacion = new Habitacion();
-        habitacion.setDescripcion("¡Hab3!");
-        habitacion.setDialogo(new String[] {
-                "¡Has descubierto la sala secreta!",
-                "*Crac*",
+        habitacion.setDescripcion("¡Has descubierto la sala secreta!");
+        habitacion.setDialogo(new String[] { 
+                "*Crack*",
                 "Oh oh, creo que no estás sol@...",
                 "Aparece una sombra",
                 "Desde la sombra empiezas a distinguir algo",
@@ -194,10 +194,9 @@ public class FabricaHabitaciones {
 
     public static Habitacion creaHabitacionHab4() {
         Habitacion habitacion = new Habitacion();
-        habitacion.setDescripcion("¡Hab4!");
+        habitacion.setDescripcion("El salón  de la mortífero");
         habitacion.setDialogo(new String[] {
-                "Sala 4. El salón  de la muerte",
-                "Estás en el salón de la muerte. Has llegado aquí desde la Sala Principal y necesitas coger un poco de aire",
+                "Has llegado y necesitas coger un poco de aire, te falta el aliento",
                 "El salón es pequeño, pero el techo es demasiado alto, lo que le imprime un aire de fábrica abandonada. El silencio es sepulcral",
                 "En el salón sólo hay tres puertas, aunque ya sabes que una de ellas es la puerta de la Sala Principal, en medio una alfombra vieja y pegada a la pared, una mesa con cajoneras",
                 "Te acercas a las otras dos puertas y ¡oh, qué casualidad!, están cerradas",
@@ -214,6 +213,7 @@ public class FabricaHabitaciones {
                 // El número que abre el candado es 11//la otra opción podrá ser el número 12/
                 // 
         });
+        System.out.println(habitacion.getDescripcion());
         // habitacion.setPistas( "Pistas de la habitación 4");
 
         // System.out.print("Presiona Enter para continuar...",
@@ -238,9 +238,8 @@ public class FabricaHabitaciones {
 
     public static Habitacion creaHabitacionHab6() {
         Habitacion habitacion = new Habitacion();
-        habitacion.setDescripcion("¡Hab6!");
-        habitacion.setDialogo(new String[] {
-                "Sala 6. La Biblioteca de Medac",
+        habitacion.setDescripcion("La BiblioMedac. ");
+        habitacion.setDialogo(new String[] { 
                 "Estás en la sala 6 por fin, después de una lucha a vida o muerte con el ente de la sala 3. La biblioteca tiene chimenea y el suelo y las paredes enmoquetadas. Las estanterías son kilométricas",
                 "Una biblioteca parece un sitio amable para tomar un respiro. Te diriges lentamente hacia el sillón que hay, pero empiezas a notar cómo las luces empiezan a decaer",
                 "Todo se está oscureciendo y puedes ver claramente cómo en una de las paredes va apareciendo un mensaje fluorescente",

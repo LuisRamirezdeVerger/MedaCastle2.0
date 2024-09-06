@@ -82,9 +82,6 @@ public class Jugador {
     }
 
     public static void moverse() {
-        // Cambiar luego, solo para pruebas
-        System.out.println(posicion);
-        // Cambiar luego, solo para pruebas
         System.out.println("¿A dónde quieres moverte?");
         String direccion = sc.nextLine();
         Habitacion habitacionActual = FabricaHabitaciones.getHabitacion(posicion);
@@ -93,6 +90,7 @@ public class Jugador {
         if (habitacionActual == null) {
             System.out.println("No se ha encontrado la habitación actual");
             moverse();
+
         }
 
         switch (direccion.toLowerCase()) {
@@ -110,6 +108,7 @@ public class Jugador {
                 break;
             default:
                 System.out.println("Dirección no válida");
+                Jugador.moverse();
                 return;
         }
 
@@ -130,9 +129,13 @@ public class Jugador {
                     break;
                 default:
                     System.out.println("Dirección no válida");
-                    break;
+                    Jugador.moverse();
             }
             System.out.println("Te has movido a la habitación " + habitacionNueva.getDescripcion());
+            for (String linea : habitacionNueva.getDialogo()) {
+                System.out.println(linea);
+                Temp.Temporizador(0000);
+            } 
         } else {
             System.out.println("No puedes moverte en esa dirección");
         }

@@ -27,7 +27,6 @@ public class Main {
 		Habitacion habActual = FabricaHabitaciones.getHabitacion(jugador.getPosicion());
 
 
-		//Jugador jugador = new Jugador("Jugador", 100, 10, 5, new Posicion(0, 0));
 		// Llamada a la habitaciones para poder interactuar con ellas
 		Habitacion presentacion = FabricaHabitaciones.creaHabitacionPresentacion();
 		Habitacion intro = FabricaHabitaciones.creaHabIntro();
@@ -128,7 +127,7 @@ public class Main {
 
 		String respuesta = sc.nextLine();
 		while (!respuesta.toLowerCase().equals("si")) {
-			System.out.println("- ¿Cómo? No te he oído bien, ¿Quieres ir al castillo?");
+			System.out.println("- ¿Cómo? No te he oído bien, ¿Quieres ir al castillo? ");
 			respuesta = sc.nextLine();
 		}
 
@@ -146,15 +145,17 @@ public class Main {
 			Temp.Temporizador(0000);
 		}
 
-		System.out.println("¿Qué quieres hacer?");
+		System.out.println("¿Qué quieres hacer? ");
 		Jugador.menu();
 		String opcion = sc.nextLine();
 		if (opcion.equals("1")) {
 			Jugador.moverse();
 		} else if (opcion.equals("2")) {
-			System.out.println("Inventario");
+			System.out.println("Inventario vacío. ");
+
 		} else {
-			System.out.println("No has hecho nada");
+			System.out.println("No has hecho nada. ");
+			Jugador.menu();
 		}
 
 		/*
