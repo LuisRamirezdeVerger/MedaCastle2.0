@@ -90,6 +90,11 @@ public class Jugador {
         Habitacion habitacionActual = FabricaHabitaciones.getHabitacion(posicion);
         Habitacion habitacionNueva = null;
 
+        if (habitacionActual == null) {
+            System.out.println("No se ha encontrado la habitación actual");
+            moverse();
+        }
+
         switch (direccion.toLowerCase()) {
             case "norte":
                 habitacionNueva = habitacionActual.getNorte();

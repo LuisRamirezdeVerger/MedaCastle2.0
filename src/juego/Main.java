@@ -17,7 +17,17 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Jugador jugador = new Jugador("Jugador", 100, 10, 5, new Posicion(0, 0));
+		//Inicializamos las habitaciones
+		FabricaHabitaciones.inicializarHabitaciones();
+
+		// Crear jugador
+        Jugador jugador = new Jugador("Jugador", 100, 10, 5, new Posicion(2, 0));
+
+		//Habitacion actual
+		Habitacion habActual = FabricaHabitaciones.getHabitacion(jugador.getPosicion());
+
+
+		//Jugador jugador = new Jugador("Jugador", 100, 10, 5, new Posicion(0, 0));
 		// Llamada a la habitaciones para poder interactuar con ellas
 		Habitacion presentacion = FabricaHabitaciones.creaHabitacionPresentacion();
 		Habitacion intro = FabricaHabitaciones.creaHabIntro();
@@ -74,21 +84,20 @@ public class Main {
 
 		
 		//Agregamos las habitaciones al mapa
-		
-		//Arreglar direccionamiento\\
+
 		FabricaHabitaciones.agregarHab(new Posicion(0, 0), presentacion);
-		FabricaHabitaciones.agregarHab(new Posicion(0, 1), intro);
-		FabricaHabitaciones.agregarHab(new Posicion(0, 2), tutorial);
-		FabricaHabitaciones.agregarHab(new Posicion(1, 0), hab0);
-		FabricaHabitaciones.agregarHab(new Posicion(1, 1), hab1);
-		FabricaHabitaciones.agregarHab(new Posicion(1, 2), hab2);
-		FabricaHabitaciones.agregarHab(new Posicion(2, 0), hab3);
-		FabricaHabitaciones.agregarHab(new Posicion(2, 1), hab4);
-		FabricaHabitaciones.agregarHab(new Posicion(2, 2), hab5);
-		FabricaHabitaciones.agregarHab(new Posicion(3, 0), hab6);
-		FabricaHabitaciones.agregarHab(new Posicion(3, 1), hab7);
-		FabricaHabitaciones.agregarHab(new Posicion(3, 2), hab8);
-		FabricaHabitaciones.agregarHab(new Posicion(4, 2), hab9);
+		FabricaHabitaciones.agregarHab(new Posicion(0, 0), intro);
+		FabricaHabitaciones.agregarHab(new Posicion(0, 0), tutorial);
+		FabricaHabitaciones.agregarHab(new Posicion(0, 0), hab0);
+		FabricaHabitaciones.agregarHab(new Posicion(2, 0), hab1);
+		FabricaHabitaciones.agregarHab(new Posicion(2, 1), hab2);
+		FabricaHabitaciones.agregarHab(new Posicion(2, 2), hab3);
+		FabricaHabitaciones.agregarHab(new Posicion(1, 0), hab4);
+		FabricaHabitaciones.agregarHab(new Posicion(1, 1), hab5);
+		FabricaHabitaciones.agregarHab(new Posicion(1, 2), hab6);
+		FabricaHabitaciones.agregarHab(new Posicion(0, 0), hab7);
+		FabricaHabitaciones.agregarHab(new Posicion(0, 1), hab8);
+		FabricaHabitaciones.agregarHab(new Posicion(0, 2), hab9);
 
 
 		// Muestra el array de dialogo de la habitacion en 1 sola linea
@@ -146,7 +155,6 @@ public class Main {
 			System.out.println("Inventario");
 		} else {
 			System.out.println("No has hecho nada");
-
 		}
 
 		/*
