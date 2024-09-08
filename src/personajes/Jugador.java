@@ -67,10 +67,11 @@ public class Jugador {
     }
 
     public static void menu() {
+        System.out.println("¿Qué quieres hacer? ");
         System.out.println("1.- Moverme ");
         System.out.println("2.- Ver inventario ");
         System.out.println("3.- Buscar pistas ");
-        System.out.println("4.- Salir ");
+        System.out.println("4.- Salir del juego ");
     }
 
     public static void menuCombateActivado() {
@@ -82,15 +83,14 @@ public class Jugador {
     }
 
     public static void moverse() {
-        System.out.println("¿A dónde quieres moverte?");
+        System.out.println("¿A dónde quieres moverte? ");
         String direccion = sc.nextLine();
         Habitacion habitacionActual = FabricaHabitaciones.getHabitacion(posicion);
         Habitacion habitacionNueva = null;
 
         if (habitacionActual == null) {
-            System.out.println("No se ha encontrado la habitación actual");
+            System.out.println("No se ha encontrado la habitación actual. ");
             moverse();
-
         }
 
         switch (direccion.toLowerCase()) {
@@ -107,7 +107,7 @@ public class Jugador {
                 habitacionNueva = habitacionActual.getOeste();
                 break;
             default:
-                System.out.println("Dirección no válida");
+                System.out.println("Dirección no válida. ");
                 Jugador.moverse();
                 return;
         }
@@ -128,16 +128,16 @@ public class Jugador {
                     posicion.setY(posicion.getY() - 1);
                     break;
                 default:
-                    System.out.println("Dirección no válida");
+                    System.out.println("Dirección no válida. ");
                     Jugador.moverse();
             }
-            System.out.println("Te has movido a la habitación " + habitacionNueva.getDescripcion());
+            System.out.println("Te has movido a  " + habitacionNueva.getDescripcion());
             for (String linea : habitacionNueva.getDialogo()) {
                 System.out.println(linea);
                 Temp.Temporizador(0000);
             } 
         } else {
-            System.out.println("No puedes moverte en esa dirección");
+            System.out.println("No puedes moverte en esa dirección. ");
         }
         // Cambiar luego, solo para pruebas
         System.out.println(posicion);

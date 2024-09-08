@@ -9,14 +9,14 @@ import personajes.*;
 
 public class Main {
 	private static Scanner sc = new Scanner(System.in);
-
+	
 	private static void espera() {
 		sc.nextLine();
 		Temp.LimpiarPantalla();
 	}
 
 	public static void main(String[] args) {
-
+	boolean game = true;
 		//Inicializamos las habitaciones
 		FabricaHabitaciones.inicializarHabitaciones();
 
@@ -24,6 +24,7 @@ public class Main {
         Jugador jugador = new Jugador("Jugador", 100, 10, 5, new Posicion(2, 0));
 
 		//Habitacion actual
+		@SuppressWarnings("unused")
 		Habitacion habActual = FabricaHabitaciones.getHabitacion(jugador.getPosicion());
 
 
@@ -83,11 +84,11 @@ public class Main {
 
 		
 		//Agregamos las habitaciones al mapa
-
-		FabricaHabitaciones.agregarHab(new Posicion(0, 0), presentacion);
-		FabricaHabitaciones.agregarHab(new Posicion(0, 0), intro);
-		FabricaHabitaciones.agregarHab(new Posicion(0, 0), tutorial);
-		FabricaHabitaciones.agregarHab(new Posicion(0, 0), hab0);
+		//Las cuatro primeras habitaciones no necesitan posición
+		FabricaHabitaciones.agregarHab(null, presentacion);
+		FabricaHabitaciones.agregarHab(null, intro);
+		FabricaHabitaciones.agregarHab(null, tutorial);
+		FabricaHabitaciones.agregarHab(null, hab0);
 		FabricaHabitaciones.agregarHab(new Posicion(2, 0), hab1);
 		FabricaHabitaciones.agregarHab(new Posicion(2, 1), hab2);
 		FabricaHabitaciones.agregarHab(new Posicion(2, 2), hab3);
@@ -145,18 +146,39 @@ public class Main {
 			Temp.Temporizador(0000);
 		}
 
-		System.out.println("¿Qué quieres hacer? ");
-		Jugador.menu();
-		String opcion = sc.nextLine();
-		if (opcion.equals("1")) {
-			Jugador.moverse();
-		} else if (opcion.equals("2")) {
-			System.out.println("Inventario vacío. ");
-
-		} else {
-			System.out.println("No has hecho nada. ");
+		do {
 			Jugador.menu();
-		}
+			String opcion = sc.nextLine();
+			if (opcion.equals("1")) {
+				Jugador.moverse();
+			} else if (opcion.equals("2")) {
+				System.out.println("Inventario vacío. ");
+				Jugador.menu();
+			} else if (opcion.equals("3")) {
+				System.out.println("Pistas. ");
+				Jugador.menu();
+			} else if (opcion.equals("4")) {
+				game = false;
+			} else {
+				System.out.println("No has hecho nada. ");
+				Jugador.menu();
+			}
+		} while (game == true);
+		System.out.println("Gracias por probar el juego! Espero que te haya entretenido, aunque sea el descargarlo. ");
+		System.out.println("¡Hasta el siguiente proyecto! ");
+		System.out.println("Code is life. ");
+		System.out.println("Creado por @Wito_015 con mucho amor. ");
+
+		//Jugador.menu();
+		//opcion = sc.nextLine();
+		//if (opcion.equals("1")) {
+		//	Jugador.moverse();
+		//} else if (opcion.equals("2")) {
+		//	System.out.println("Inventario vacío. ");
+		//} else {
+		//	System.out.println("No has hecho nada. ");
+		//	Jugador.menu();
+		//}
 
 		/*
 		 * --- Terreno de pruebas ---

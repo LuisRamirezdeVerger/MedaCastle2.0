@@ -108,7 +108,6 @@ public class FabricaHabitaciones {
         Habitacion habitacion = new Habitacion();
         habitacion.setDescripcion("¡Hab0!"); 
         habitacion.setDialogo(new String[] {
-
                 "Con mucha confianza, y sin pensarlo dos veces, te sacudes los miedos y cruzas corriendo el puente levadizo.",
                 "*Acabas de entrar en el castillo...*",
                 "Al escuchar la voz de tu compi, te das media vuelta para saber que está pasando...",
@@ -144,7 +143,7 @@ public class FabricaHabitaciones {
 
     public static Habitacion creaHabitacionHab2() {
         Habitacion habitacion = new Habitacion();
-        habitacion.setDescripcion("El Pasillo");
+        habitacion.setDescripcion("El Pasillo. ");
         habitacion.setDialogo(new String[] {
                 "Entras en el pasillo y te paras. Parece un pasillo normal, pero sabes que no lo será.",
                 "Das un paso dudoso y piensas que tienes que tener más decisión si quieres llegar a la siguiente habitación.",
@@ -168,7 +167,7 @@ public class FabricaHabitaciones {
 
     public static Habitacion creaHabitacionHab3() {
         Habitacion habitacion = new Habitacion();
-        habitacion.setDescripcion("¡Has descubierto la sala secreta!");
+        habitacion.setDescripcion("¡La Sala Secreta! ");
         habitacion.setDialogo(new String[] { 
                 "*Crack*",
                 "Oh oh, creo que no estás sol@...",
@@ -177,7 +176,7 @@ public class FabricaHabitaciones {
                 "Sea lo que sea, está claro que no es humano",
                 "Y los más de 2 metros de altura no ayudan a mantener la calma",
                 "Te das la vuelta y te diriges rápidamente hacia la puerta",
-                "Vaya parece que está bloqueada, no tienes escapatoria",
+                "Vaya, parece que está bloqueada, no tienes escapatoria...",
                 "En este momento, eres tú o ese ser de procedencia desconocida",
                 "", // el jugador debe interactuar para derrotar al monstruo
                 "No ha sido fácil... ¡pero lo lograste!",
@@ -194,7 +193,7 @@ public class FabricaHabitaciones {
 
     public static Habitacion creaHabitacionHab4() {
         Habitacion habitacion = new Habitacion();
-        habitacion.setDescripcion("El salón  de la mortífero");
+        habitacion.setDescripcion("El Salón Mortífero. ");
         habitacion.setDialogo(new String[] {
                 "Has llegado y necesitas coger un poco de aire, te falta el aliento",
                 "El salón es pequeño, pero el techo es demasiado alto, lo que le imprime un aire de fábrica abandonada. El silencio es sepulcral",
@@ -263,9 +262,8 @@ public class FabricaHabitaciones {
 
     public static Habitacion creaHabitacionHab7() {
         Habitacion habitacion = new Habitacion();
-        habitacion.setDescripcion("¡Hab7!");
+        habitacion.setDescripcion("El baño. ");
         habitacion.setDialogo(new String[] {
-                "¡Hab7!",
                 "¡Bienvenid@ al baño de esta humilde morada!",
                 "Como puedes observar la limpieza brilla por su ausencia...",
                 "*¡Plaf!*",
@@ -293,14 +291,9 @@ public class FabricaHabitaciones {
 
     public static Habitacion creaHabitacionHab8() {
         Habitacion habitacion = new Habitacion();
-        habitacion.setDescripcion("¡Hab8!");
-        habitacion.setDialogo(new String[] {
-                "Estás en el Dormitorio Principal",
-                "Cruzas la puerta hacia el dormitorio principal desde el baño y de repente un aura te rodea. Ese aura te hace sentir muy bien, muy fuerte y seguro y puedes ver cómo la espada se torna azul", //la  e
-                                                                                                                                                                                                                 // pada s
-                                                                                                                                                                                                                 //  v
-                                                                                                                                                                                                                 // elve a
-                                                                                                                                                                                                                 // ul//
+        habitacion.setDescripcion("El Dormitorio Principal. ");
+        habitacion.setDialogo(new String[] { 
+                "Cruzas la puerta hacia el dormitorio principal desde el baño y de repente un aura te rodea. Ese aura te hace sentir muy bien, muy fuerte y seguro y puedes ver cómo la espada se torna azul", 
                 "Te adentras en el dormitorio. Está sucio, abandonado descde hace mucho, no tiene ventanas, pero sí tres puertas de madera con pomos metálicos",
                 "Sientes un escalofrío y sabes que algo no está bien allí, pero la habitación parece vacía",
                 "La cama está deshecha, te acercas despacio, tocas el colchón desnudo y notas que está caliente",
