@@ -15,19 +15,13 @@ public class Habitacion {
     private Habitacion sur;
     private Habitacion este;
     private Habitacion oeste;
+    //Creamos el parámetro para saber si la habitación ha sido visitada
+    private boolean visitada;
 
      
-    // Constructor con datos
+    // Constructor
     public Habitacion() {
-        this.descripcion = descripcion;
-        this.dialogo = dialogo;
-        this.pistas = pistas;
-        this.objetos = objetos;
-        this.enemigo = enemigo;
-        this.norte = norte;
-        this.sur = sur;
-        this.este = este;
-        this.oeste = oeste;
+
     }
 
     // Getters y setters
@@ -101,6 +95,14 @@ public class Habitacion {
 
     public void setOeste(Habitacion newOeste){
         this.oeste = newOeste;
+    }
+
+    public boolean getVisitada(){
+        return visitada;
+    }
+
+    public void setVisitada(boolean newVisitada){
+        this.visitada = newVisitada;
     }
 
     /* 

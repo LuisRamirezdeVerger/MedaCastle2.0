@@ -60,9 +60,9 @@ public class FabricaHabitaciones {
         Habitacion habitacion = new Habitacion();
         habitacion.setDescripcion("¡Introducción!");
         habitacion.setDialogo(new String[] {
-                "¡Por fin acabó el trimestre!",
-                "Tú y tus amigos habéis quedado para unas vacaciones en un camping.",
-                "Al llegar, dejáis vuestras pertenencias en el bungaloo asignado.",
+                "¡Por fin acabó el primer curso!",
+                "Tú y tus amigos habéis quedado para unas vacaciones en un camping. ",
+                "Al llegar, dejáis vuestras pertenencias en el bungaloo asignado. ",
                 "*TOC, TOC, TOC!* Llaman a la puerta...",
                 "¿Se puede? - Pregunta alguien con voz masculina...",
                 "Perdonad chicos, pero parece que tenemos un problema con las instalaciones.",
@@ -83,15 +83,15 @@ public class FabricaHabitaciones {
         Habitacion habitacion = new Habitacion();
         habitacion.setDescripcion("¡HabTuto!");
         habitacion.setDialogo(new String[] {
-                "- ¡Bien! Tampoco tenemos nada mejor que hacer, vayamos al castillo!.",
-                "~ Exclama un compañero ~ A todos os parece una buena idea, y sin dudar, partís.",
-                "Seguís las indicaciones de la persona al cargo, y, tras 9 minutos, llegáis al castillo.",
-                "Es un castillo de lo más normal, con su puente levadizo",
-                " torretas para catapultas y varios puntos estratégicos necesarios en la época.",
-                "Está un poco en ruinas, tiene varias brechas en los muros, el río está seco y...",
-                "Ahora que lo miras detenidamente, tu corazón empieza a acelerarse.",
-                "Sientes una extraña sensación y te planteas dar media vuelta...", 
-                "¿Uh? Estás bien, colega? -Te preguntan."
+                "- ¡Bien! Tampoco tenemos nada mejor que hacer, ¡vayamos al castillo! ",
+                "~ Exclama un compañero ~", "A todos os parece una buena idea, y sin dudar, partís. ",
+                "Seguís las indicaciones de la persona al cargo, y, tras 9 minutos, llegáis al castillo. ",
+                "Es un castillo de lo más normal, con su puente levadizo, ",
+                "torretas para catapultas y varios puntos estratégicos necesarios en la época. ",
+                "Está un poco en ruinas, tiene varias brechas en los muros, el río está seco y... ",
+                "Tu corazón empieza a acelerarse. ",
+                "Sientes una extraña sensación y te planteas dar media vuelta... ", 
+                "¿Uh? Estás bien, colega? -Te preguntan. "
         });
         
 
@@ -107,17 +107,19 @@ public class FabricaHabitaciones {
     public static Habitacion creaHabitacionHab0() {
         Habitacion habitacion = new Habitacion();
         habitacion.setDescripcion("¡Hab0!"); 
+
         habitacion.setDialogo(new String[] {
                 "Con mucha confianza, y sin pensarlo dos veces, te sacudes los miedos y cruzas corriendo el puente levadizo.",
+                "Será todo un descubrimiento! ~ piensas ~ ... ",
                 "*Acabas de entrar en el castillo...*",
-                "Al escuchar la voz de tu compi, te das media vuelta para saber que está pasando...",
+                "Escuchas levemente la voz de tu una de tus compañeras. ",
+                "Te das media vuelta para saber que está pasando... ",
                 "¡¡Oh, f*ck!! ",
-                "Presiona Enter para continuar...",
-                "Al mirar atrás, ves como el puente se ha cerrado detrás tuya...",
+                "Al mirar atrás, ves como el puente se ha cerrado detrás tuya... ",
                 "Eh! Eh!!- Escuchas un grito detrás del puente levado - ", 
                 "Avisaremos a la persona al cargo y vendremos a por ti,",
-                "intenta buscar alguna salida mientras y no te metas en líos!",
-                "Presiona Enter para continuar."
+                "intenta buscar alguna salida mientras y no te metas en líos! ",
+                "Presiona Enter para continuar. "
         });
 
         return habitacion;
@@ -125,12 +127,24 @@ public class FabricaHabitaciones {
 
     public static Habitacion creaHabitacionHab1() {
         Habitacion habitacion = new Habitacion();
-        habitacion.setDescripcion("¡Hab1!");
-        habitacion.setDialogo(new String[] {
+        habitacion.setVisitada(false);
+        habitacion.setDescripcion("La entrada. ");
+
+        if (habitacion.getVisitada()) {
+            habitacion.setVisitada(true);
+             habitacion.setDialogo(new String[] {
                 "Te quedas en shock con la cara un tanto descompuesta...",
                 "Después de unos minutos mirando a la puerta como alguien de poco IQ, decides que será divertido explorar un castillo abandonado. ",
                 "Pronto llegarán. -Piensas-"
         });
+        } else {
+            habitacion.setDialogo(new String[] {
+                "Ya has estado por aquí, no queda mucho más que hacer. ",
+                "¿Estás list@ para continuar? ",
+                "¡Vamos! ¡No hay tiempo que perder! "
+            });
+        }
+       
         // Aquí agregar un menú para que el jugador pueda elegir si quiere seguir o no
 
         // habitacion.setPistas( "Pistas de la habitación 1");
@@ -148,10 +162,11 @@ public class FabricaHabitaciones {
                 "Entras en el pasillo y te paras. Parece un pasillo normal, pero sabes que no lo será.",
                 "Das un paso dudoso y piensas que tienes que tener más decisión si quieres llegar a la siguiente habitación.",
                 "Respiras hondo y comienzas a caminar. Entornas los ojos y de repente suena un ruido de engranajes.",
-                "¡Mierda! Las paredes del pasillo comienzan a cerrarse lentamente y cada sonido del engranaje se clava en tus entrañas.",
-                "Está bien -piensas-, es el momento de pensar rápido si no quiero morir en versión 2D.",
-                "Sólo tienes dos opciones y tienes que salir rápido de este pasillo. Las paredes se siguen cerrando y casi puedes tocarlas con ambas manos a la vez. ",
-                "Sigue hacia delante o gira a la derecha. ¡DECIDE! ¡¡VAMOS!! ",
+                "¡Mierda! Las paredes del pasillo comienzan a acercarse lentamente y cada sonido del engranaje se clava en ti.",
+                "Está bien -piensas-, no es el momento de morir en versión 2D.",
+                "Sólo tienes dos opciones y tienes que salir rápido de este pasillo.",
+                "Las paredes se siguen cerrando y casi puedes tocarlas con ambas manos a la vez. ",
+                "Sigue hacia el norte o dirígete al este. ¡DECIDE! ¡¡VAMOS!! ",
         });
         // habitacion.setPistas( "Pistas de la habitación 2");
         // "Elige una opción: \n",
@@ -185,7 +200,7 @@ public class FabricaHabitaciones {
                                                                                // se ha desbloqueado y ya puede salir y
                                                                                // avanzar
         });
-        // habitacion.setPistas( "Pistas de la habitación 3");
+        // Introducir minijuego de combate
         // Temp.LimpiarPantalla();
 
         return habitacion;
@@ -213,7 +228,7 @@ public class FabricaHabitaciones {
                 // 
         });
         System.out.println(habitacion.getDescripcion());
-        // habitacion.setPistas( "Pistas de la habitación 4");
+        // Intro minijuego de candado
 
         // System.out.print("Presiona Enter para continuar...",
         // sc.nextLine();
@@ -309,7 +324,7 @@ public class FabricaHabitaciones {
 
         });
 
-        // habitacion.setPistas( "Pistas de la habitación 8");
+        // Intro minijuego 
 
         // System.out.print("Presiona Enter para continuar...");
         // sc.nextLine();

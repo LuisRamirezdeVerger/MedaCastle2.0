@@ -132,10 +132,20 @@ public class Jugador {
                     Jugador.moverse();
             }
             System.out.println("Te has movido a  " + habitacionNueva.getDescripcion());
-            for (String linea : habitacionNueva.getDialogo()) {
-                System.out.println(linea);
-                Temp.Temporizador(0000);
-            } 
+
+            if (!habitacionNueva.getVisitada()) {
+                habitacionNueva.setVisitada(true);
+                for (String linea : habitacionNueva.getDialogo()) {
+                    System.out.println(linea);
+                    Temp.Temporizador(0000);
+                    
+                }
+            } else {
+                for (String linea : habitacionNueva.getDialogo()) {
+                    System.out.println(linea);
+                    Temp.Temporizador(0000);
+                }
+            }
         } else {
             System.out.println("No puedes moverte en esa dirección. ");
         }

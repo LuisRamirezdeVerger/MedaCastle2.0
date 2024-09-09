@@ -130,7 +130,10 @@ public class Main {
 		while (!respuesta.toLowerCase().equals("si")) {
 			System.out.println("- ¿Cómo? No te he oído bien, ¿Quieres ir al castillo? ");
 			respuesta = sc.nextLine();
-		}
+		} if (respuesta.toLowerCase().equals("si")) {
+			System.out.println("¡Perfecto! ¡Vamos allá! ");
+			System.out.println("Pulsa enter para continuar. ");
+		} 
 
 		espera();
 
