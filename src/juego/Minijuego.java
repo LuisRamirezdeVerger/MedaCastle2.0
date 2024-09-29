@@ -5,8 +5,8 @@ import extras.Temp;
 
 public class Minijuego {
     
-    public static void miniJuegoLlave() {
-        //El escondite de la llave
+    public static void miniJuegoBola() {
+        //El escondite de la bola
         Scanner sc = new Scanner(System.in);
         System.out.println("Al entrar en la habitación, te encuentras con un juglar con aspecto de duende. ");
         Temp.Temporizador(2000);
