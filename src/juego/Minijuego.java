@@ -18,9 +18,9 @@ public class Minijuego {
         Temp.Temporizador(2000);
         System.out.println("No gastes todos tus intentos en adivinar el vaso correcto o ... ");
         Temp.Temporizador(2000);
-        System.out.println("¿Cuántos intentos necesitas para encontrar la llave? Pronto lo sabrás. ");
+        System.out.println("¿Cuántos intentos necesitas para encontrar la bola? Pronto lo sabrás. ");
         Temp.Temporizador(2000);
-        System.out.println("Divisas un vaso con una bola dentro y dos vasos vacíos. ");
+        System.out.println("Divisas una pequeña mesa improvisada de cartón con 3 vasos y una bola . ");
         Temp.Temporizador(2000);
         System.out.println("El juglar comienza a mover los vasos rápidamente. ");
         Temp.Temporizador(2000);
@@ -45,6 +45,6 @@ public class Minijuego {
         } catch (InputMismatchException e) {
             System.out.println("¡Eso no es un número! Se nota que eres de letras... ");
         }
-        
+        sc.close();
     }
 }
