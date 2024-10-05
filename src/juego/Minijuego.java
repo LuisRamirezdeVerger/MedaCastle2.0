@@ -38,7 +38,7 @@ public class Minijuego {
                     System.out.println("¡Imposible! No deberías haber acertado... ");
                     encontrado = true;
                 } else {
-                    System.out.println("Jajajaja, ¡no has acertado! ");
+                    System.out.println("Jajajaja, ¡no has acertado! ¿Cuántos intentos más tendrás? ");
                     intentos--;
                 }
             }

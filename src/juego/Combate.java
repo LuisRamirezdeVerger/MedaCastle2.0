@@ -66,7 +66,7 @@ public class Combate {
                 Temp.Temporizador(2000);
                 enemigo.setVida(enemigo.getVida() - dmgJugador);  
                 break;
-            case 2:
+            case 420:
                 // Curar
                 // Debe de posser una poción en el inventario
                 jugador.setVida(jugador.getVida() + 10);

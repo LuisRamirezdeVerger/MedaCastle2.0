@@ -106,6 +106,7 @@ public class Main {
 
 		// Muestra el array de dialogo de la habitacion en varias lineas
 		// De esta forma es más facil de leer
+		
 		System.out.println(presentacion.getDescripcion());
 
 		for (String linea : presentacion.getDialogo()) {
@@ -149,6 +150,7 @@ public class Main {
 			System.out.println(linea);
 			Temp.Temporizador(0000);
 		}
+	
 
 		do {
 			Jugador.menu();
