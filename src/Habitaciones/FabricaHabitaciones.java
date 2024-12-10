@@ -337,18 +337,18 @@ public class FabricaHabitaciones {
         Habitacion habitacion = new Habitacion();
         habitacion.setDescripcion("¡Hab9!");
         habitacion.setDialogo(new String[] {
-                "Has llegado a la última habitación, ¿preparad@?",
-                "Te das la vuelta y notas el frío en la cara, en las manos. Descubres que has salido del castillo y ahora estás en el jardín.",
-                "Al salir al exterior, el castillo desaparece y detrás tuya se forma un muro de arbustos dejándote encerrad@. No tienes más opciones que explorar el jardín.",
-                "La salida al exterior y tu supervivencia dependen de que consigas encontrar la pista y el desafío final.",
-                "El jardín parece ser rectangular. A unos metros hay una mesa con una sombrilla en el medio y cuatro sillas alrededor un tanto estropeadas.",
-                "Hay numerosos arbustos distribuidos por el jardín junto con cetros, encinas, alcornoques... El jardín está bastante descuidado.",
-                "Es hora de empezar a explorar.",
-                "Recuerda elegir bien cada decisión que tomes y atent@ a lo que te puedas encontrar.",
+                "Has llegado a la última habitación, ¿preparad@? ",
+                "Te das la vuelta y notas el frío en la cara, en las manos. Descubres que has salido del castillo y ahora estás en el jardín. ",
+                "Al salir al exterior, el castillo desaparece y detrás tuya se forma un muro de arbustos dejándote encerrad@. No tienes más opciones que explorar el jardín. ",
+                "La salida al exterior y tu supervivencia dependen de que consigas encontrar la pista y el desafío final. ",
+                "El jardín parece ser rectangular. A unos metros hay una mesa con una sombrilla en el medio y cuatro sillas alrededor un tanto estropeadas. ",
+                "Hay numerosos arbustos distribuidos por el jardín junto con cetros, encinas, alcornoques... El jardín está bastante descuidado. ",
+                "Es hora de empezar a explorar. ",
+                "Recuerda elegir bien cada decisión que tomes y atent@ a lo que te puedas encontrar. ",
                 // que el jugador interactúe para decidir que hacer
-                "Debajo de la mesa, entre el césped hay una nota:",
+                "Debajo de la mesa, entre el césped hay una nota: ",
                 // esto será cuando le de a buscar pistas
-                "*¿Cuál es la función principal de una VARIABLE en programación?*",
+                "*¿Cuál es la función principal de una VARIABLE en programación?* ",
                 // esto será cuando le de a buscar pistas
                 /*
                  * "Elige tu respuesta:");

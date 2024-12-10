@@ -170,7 +170,8 @@ public class Main {
 				Jugador.menu();
 			}
 		} while (game == true);
-		System.out.println("¡Gracias por probar el juego! Espero que te haya entretenido, aunque sea el descargarlo. ");
+		Temp.Temporizador(3000);
+		System.out.println("¡Gracias por probar el juego! Espero que te haya entretenido. ");
 		System.out.println("¡Hasta el siguiente proyecto! ");
 		System.out.println("Code is life. ");
 		System.out.println("Creado por @Wito_015 con mucho amor. ");

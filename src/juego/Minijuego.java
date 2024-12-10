@@ -6,7 +6,7 @@ import extras.Temp;
 public class Minijuego {
     
     public static void miniJuegoBola() {
-        //El escondite de la bola
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Al entrar en la habitación, te encuentras con un juglar con aspecto de duende. ");
         Temp.Temporizador(2000);
@@ -42,9 +42,12 @@ public class Minijuego {
                     intentos--;
                 }
             }
+            //añadir el error si se introduce un número mayor a 3 o menor a 1
         } catch (InputMismatchException e) {
             System.out.println("¡Eso no es un número! Se nota que eres de letras... ");
         }
         sc.close();
     }
+
+    //Habría que crear 1-2 minijuegos más. 
 }
